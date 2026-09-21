@@ -10,73 +10,83 @@ export default function Home() {
       <main className="flex flex-col min-h-screen overflow-x-hidden w-full">
         
         {/* HERO SECTION */}
-        <section className="relative flex flex-col items-center justify-start bg-[#003B5C] pt-32 pb-24 w-full">
-          <div className="relative z-10 flex flex-col items-center text-center px-4 w-full max-w-5xl mx-auto">
+        <section className="relative flex flex-col justify-center bg-[#003B5C] pt-32 pb-24 w-full overflow-hidden">
+          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-12 lg:gap-8 items-center px-4 md:px-8 lg:px-12 w-full max-w-[1400px] mx-auto">
             
-            {/* Headline */}
+            {/* Left Column: Content */}
+            <div className="flex flex-col items-start text-left">
+              {/* Headline */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
+                className="w-full"
+              >
+                <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold tracking-tighter leading-[1.05] text-white mb-6 pr-4 text-balance">
+                  Video platform built for African research and education communities
+                </h1>
+              </motion.div>
+
+              {/* Subtitle */}
+              <motion.p 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+                className="text-lg md:text-xl text-white/70 max-w-xl text-balance leading-relaxed font-medium mb-10"
+              >
+                Teach a class, supervise a thesis or host a conference from your browser. Sign in with your university account, on a service run by the research and education community, with meeting traffic carried on African networks.
+              </motion.p>
+
+              {/* CTA Buttons */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
+                className="flex flex-col sm:flex-row flex-wrap items-center sm:items-start gap-4 mb-6"
+              >
+                <button className="w-full sm:w-auto px-8 py-3 rounded-full bg-[#F1921A] text-white font-semibold hover:bg-[#F1921A]/90 transition-all text-center">
+                  Test eduMEET
+                </button>
+                <button className="w-full sm:w-auto px-8 py-3 rounded-full bg-white text-[#003B5C] font-semibold hover:bg-white/90 transition-all text-center">
+                  Get eduMEET at your university
+                </button>
+                <button className="w-full sm:w-auto px-8 py-3 rounded-full bg-transparent border border-white/30 text-white font-semibold hover:bg-white/10 transition-all text-center">
+                  What is eduMEET
+                </button>
+              </motion.div>
+
+              {/* Trust Text */}
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
+                className="text-sm text-white/50 max-w-xl mb-8 lg:mb-0"
+              >
+                Open source. Backed by WACREN and the European Union through AfricaConnect4. <br className="hidden sm:block" />
+                Running an NREN? <Link href="/nren-hub" className="text-white/80 hover:text-white underline decoration-white/30 underline-offset-4 transition-colors">Go to the NREN hub</Link>
+              </motion.p>
+            </div>
+
+            {/* Right Column: Video */}
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-              className="max-w-4xl"
-            >
-              <h1 className="text-5xl md:text-7xl font-bold tracking-tighter leading-[1.05] text-white mb-8">
-                Video meetings built for African universities
-              </h1>
-            </motion.div>
-
-            {/* Subtitle */}
-            <motion.p 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-              className="text-lg md:text-xl text-white/70 max-w-3xl text-balance leading-relaxed font-medium mb-10"
-            >
-              Teach a class, supervise a thesis or host a conference from your browser. Sign in with your university account, on a service run by the research and education community, with meeting traffic carried on African networks.
-            </motion.p>
-
-            {/* CTA Buttons */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
-              className="flex flex-col sm:flex-row items-center gap-4 mb-6"
-            >
-              <button className="px-8 py-3 rounded-full bg-[#F1921A] text-white font-semibold hover:bg-[#F1921A]/90 transition-all">
-                Get eduMEET at your university
-              </button>
-              <button className="px-8 py-3 rounded-full bg-white text-[#003B5C] font-semibold hover:bg-white/90 transition-all">
-                What is eduMEET
-              </button>
-            </motion.div>
-
-            {/* Trust Text */}
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-              className="text-sm text-white/50 max-w-2xl mb-16"
-            >
-              Open source. Backed by WACREN and the European Union through AfricaConnect4. <br className="hidden sm:block" />
-              Running an NREN? <Link href="/nren-hub" className="text-white/80 hover:text-white underline decoration-white/30 underline-offset-4 transition-colors">Go to the NREN hub</Link>
-            </motion.p>
-
-            {/* Dashboard/Interface Image Frame */}
-            <motion.div
-              initial={{ opacity: 0, y: 60 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, x: 40 }}
+              animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-              className="relative w-full max-w-5xl rounded-[2rem] overflow-hidden border border-white/10 bg-white/5 p-2 backdrop-blur-sm"
+              className="relative w-full rounded-[2rem] overflow-hidden border border-white/10 bg-white/5 p-2 backdrop-blur-sm lg:scale-[1.2] xl:scale-[1.3] lg:origin-left z-0"
             >
-              {/* Inner frame for the image to give it a "device" look */}
-              <div className="relative w-full rounded-[1.5rem] overflow-hidden bg-gray-900 border border-white/10 flex">
-                <img 
-                  src="/interface.jpg" 
-                  alt="eduMEET Video Interface" 
-                  className="w-full h-auto object-contain block"
+              {/* Inner frame for the video to give it a "device" look */}
+              <div className="relative w-full aspect-[3/2] rounded-[1.5rem] overflow-hidden bg-gray-900 border border-white/10 flex shadow-2xl">
+                <video 
+                  src="https://res.cloudinary.com/djotqlsxl/video/upload/v1790004662/man-video-conferencing-on-laptop-with-headphones-2026-09-18-02-40-43-utc_e3tpss.mov" 
+                  autoPlay 
+                  loop 
+                  muted 
+                  playsInline
+                  className="absolute inset-0 w-full h-full object-cover block"
                 />
               </div>
             </motion.div>
+
           </div>
         </section>
 
@@ -235,7 +245,7 @@ export default function Home() {
               className="flex flex-col w-full lg:w-[45%]"
             >
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter text-[#001D2E] mb-6 leading-[1.05]">
-                Built by universities, for universities.
+                Easy to access. Easy to use
               </h2>
               <p className="text-lg text-slate-500 mb-12 leading-relaxed max-w-xl font-medium">
                 eduMEET works exactly like the video tools you already know. The difference is who runs it: the global research and education community.
@@ -827,13 +837,12 @@ export default function Home() {
             Find out if your NREN has joined, or tell us you&apos;re interested.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center gap-6 md:gap-8 mt-2">
-            <Link href="#" className="inline-flex items-center justify-center px-8 py-3.5 bg-[#2A75C1] text-white rounded-full font-semibold hover:bg-[#2A75C1]/90 transition-colors shadow-sm">
+          <div className="flex flex-col sm:flex-row items-center gap-4">
+            <Link href="#" className="px-8 py-3.5 rounded-full bg-[#2A75C1] text-white font-semibold hover:bg-[#2A75C1]/90 transition-all text-sm md:text-base inline-flex items-center justify-center">
               Get eduMEET
             </Link>
-            <Link href="#" className="inline-flex items-center gap-1 text-sm font-semibold text-[#001D2E] hover:text-[#2A75C1] transition-colors">
-              Contact WACREN 
-              <svg className="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" /></svg>
+            <Link href="#" className="px-8 py-3.5 rounded-full bg-transparent text-[#001D2E] font-semibold hover:bg-slate-100 transition-all text-sm md:text-base inline-flex items-center gap-2">
+              Contact WACREN <span aria-hidden="true">&rarr;</span>
             </Link>
           </div>
           
