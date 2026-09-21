@@ -31,13 +31,13 @@ export function Navigation() {
               <div className="absolute top-full left-0 pt-2 w-[280px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0">
                 <div className="rounded-xl border border-border/50 bg-background/95 backdrop-blur-md shadow-lg p-2 flex flex-col gap-1">
                   {[
-                    { title: "Students & lecturers", desc: "Classes, tutorials, supervision" },
-                    { title: "Researchers", desc: "Projects, seminars, conferences" },
-                    { title: "Vice Chancellors & leadership", desc: "Cost, control and strategy" },
-                    { title: "IT directors", desc: "Login, domain, support" },
-                    { title: "NRENs", desc: "Run the service for your members" },
+                    { title: "Students & lecturers", desc: "Classes, tutorials, supervision", href: "/students-lecturers" },
+                    { title: "Researchers", desc: "Projects, seminars, conferences", href: "#" },
+                    { title: "Vice Chancellors & leadership", desc: "Cost, control and strategy", href: "#" },
+                    { title: "IT directors", desc: "Login, domain, support", href: "#" },
+                    { title: "NRENs", desc: "Run the service for your members", href: "#" },
                   ].map((item) => (
-                    <Link key={item.title} href="#" className="flex flex-col p-2 rounded-md hover:bg-muted transition-colors">
+                    <Link key={item.title} href={item.href} className="flex flex-col p-2 rounded-md hover:bg-muted transition-colors">
                       <span className="font-medium text-foreground">{item.title}</span>
                       <span className="text-xs text-muted-foreground">{item.desc}</span>
                     </Link>
@@ -113,7 +113,7 @@ export function Navigation() {
             <div className="py-4 border-b border-black/5">
               <div className="font-semibold text-[#001D2E] mb-3">Who it&apos;s for</div>
               <div className="flex flex-col pl-4 gap-4">
-                <Link href="#" onClick={() => setIsOpen(false)} className="text-sm font-medium text-slate-500 hover:text-[#F1921A] transition-colors">Students & lecturers</Link>
+                <Link href="/students-lecturers" onClick={() => setIsOpen(false)} className="text-sm font-medium text-slate-500 hover:text-[#F1921A] transition-colors">Students & lecturers</Link>
                 <Link href="#" onClick={() => setIsOpen(false)} className="text-sm font-medium text-slate-500 hover:text-[#8E1B73] transition-colors">Researchers</Link>
                 <Link href="#" onClick={() => setIsOpen(false)} className="text-sm font-medium text-slate-500 hover:text-[#003B5C] transition-colors">Vice Chancellors & leadership</Link>
                 <Link href="#" onClick={() => setIsOpen(false)} className="text-sm font-medium text-slate-500 hover:text-[#F1921A] transition-colors">IT directors</Link>
