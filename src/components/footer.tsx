@@ -24,7 +24,7 @@ export function Footer() {
             <div className="flex flex-col gap-3 w-full max-w-sm mt-4">
               <span className="text-white font-medium">Get in touch:</span>
               <div className="flex w-full">
-                <a href="mailto:PMO@wacren.net" className="flex-1 bg-white/10 hover:bg-white/20 transition-colors border border-white/20 rounded-l-md px-4 py-3 text-white placeholder:text-white/60 font-mono text-sm flex items-center shadow-sm">
+                <a href="mailto:PMO@wacren.net" className="flex-1 bg-white/10 hover:bg-white/20 transition-colors border border-white/20 rounded-l-md px-4 py-3 text-white placeholder:text-white/60 text-sm flex items-center shadow-sm">
                   PMO@wacren.net
                 </a>
                 <a href="mailto:PMO@wacren.net" className="bg-white/20 hover:bg-white/30 transition-colors border border-l-0 border-white/20 rounded-r-md px-4 py-3 flex items-center justify-center shadow-sm">
@@ -45,7 +45,7 @@ export function Footer() {
                 "FAQ",
                 "Get eduMEET"
               ].map(link => (
-                <Link key={link} href="#" className="text-white hover:text-[#F1921A] transition-colors text-sm font-mono uppercase tracking-wide">
+                <Link key={link} href="#" className="text-white hover:text-[#F1921A] transition-colors text-sm uppercase tracking-wide">
                   {link}
                 </Link>
               ))}
@@ -59,7 +59,7 @@ export function Footer() {
                 "University leaders",
                 "IT directors"
               ].map(link => (
-                <Link key={link} href="#" className="text-white hover:text-[#F1921A] transition-colors text-sm font-mono uppercase tracking-wide">
+                <Link key={link} href="#" className="text-white hover:text-[#F1921A] transition-colors text-sm uppercase tracking-wide">
                   {link}
                 </Link>
               ))}
@@ -74,7 +74,7 @@ export function Footer() {
                 "Technical onboarding",
                 "Contact"
               ].map(link => (
-                <Link key={link} href="#" className="text-white hover:text-[#F1921A] transition-colors text-sm font-mono uppercase tracking-wide">
+                <Link key={link} href="#" className="text-white hover:text-[#F1921A] transition-colors text-sm uppercase tracking-wide">
                   {link}
                 </Link>
               ))}

@@ -33,7 +33,7 @@ export function Navigation() {
                   {[
                     { title: "Students & lecturers", desc: "Classes, tutorials, supervision", href: "/students-lecturers" },
                     { title: "Researchers", desc: "Projects, seminars, conferences", href: "/researchers" },
-                    { title: "Vice Chancellors & leadership", desc: "Cost, control and strategy", href: "#" },
+                    { title: "Vice Chancellors & leadership", desc: "Cost, control and strategy", href: "/leadership" },
                     { title: "IT directors", desc: "Login, domain, support", href: "#" },
                     { title: "NRENs", desc: "Run the service for your members", href: "#" },
                   ].map((item) => (
@@ -115,7 +115,7 @@ export function Navigation() {
               <div className="flex flex-col pl-4 gap-4">
                 <Link href="/students-lecturers" onClick={() => setIsOpen(false)} className="text-sm font-medium text-slate-500 hover:text-[#F1921A] transition-colors">Students & lecturers</Link>
                 <Link href="/researchers" onClick={() => setIsOpen(false)} className="text-sm font-medium text-slate-500 hover:text-[#8E1B73] transition-colors">Researchers</Link>
-                <Link href="#" onClick={() => setIsOpen(false)} className="text-sm font-medium text-slate-500 hover:text-[#003B5C] transition-colors">Vice Chancellors & leadership</Link>
+                <Link href="/leadership" onClick={() => setIsOpen(false)} className="text-sm font-medium text-slate-500 hover:text-[#003B5C] transition-colors">Vice Chancellors & leadership</Link>
                 <Link href="#" onClick={() => setIsOpen(false)} className="text-sm font-medium text-slate-500 hover:text-[#F1921A] transition-colors">IT directors</Link>
                 <Link href="#" onClick={() => setIsOpen(false)} className="text-sm font-medium text-slate-500 hover:text-[#8E1B73] transition-colors">NRENs</Link>
               </div>
