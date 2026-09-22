@@ -288,7 +288,7 @@ export default function Home() {
                 
               </div>
               
-              <Link href="#" className="inline-flex items-center justify-center w-fit px-8 py-4 bg-[#001D2E] text-white rounded-full font-semibold hover:bg-[#F1921A] transition-all gap-2 group">
+              <Link href="#" className="inline-flex items-center justify-center w-fit px-8 py-4 bg-[#001D2E] text-white rounded-none shadow-none border border-transparent font-semibold hover:bg-[#F1921A] transition-all gap-2 group">
                 Learn more about eduMEET
                 <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
               </Link>
@@ -502,10 +502,10 @@ export default function Home() {
 
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link href="#" className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-[#8E1B73] text-white rounded-full font-semibold hover:bg-[#8E1B73]/90 transition-all">
+              <Link href="#" className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-[#8E1B73] text-white rounded-none shadow-none border border-transparent font-semibold hover:bg-[#8E1B73]/90 transition-all">
                 Check if your country is connected
               </Link>
-              <Link href="#" className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-slate-100 text-[#001D2E] rounded-full font-semibold hover:bg-slate-200 transition-all">
+              <Link href="#" className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-slate-100 text-[#001D2E] rounded-none shadow-none border border-transparent font-semibold hover:bg-slate-200 transition-all">
                 See how it works
               </Link>
             </div>
@@ -827,25 +827,23 @@ export default function Home() {
         </section>
 
         {/* FINAL CTA SECTION */}
-        <section className="w-full bg-[#FAFAFA] py-32 px-4 border-t border-black/5 flex flex-col items-center justify-center text-center">
-          
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-[#001D2E] mb-6">
-            Bring eduMEET to your campus
-          </h2>
-
-          <p className="text-base md:text-lg text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-            Find out if your NREN has joined, or tell us you&apos;re interested.
-          </p>
-
-          <div className="flex flex-col sm:flex-row items-center gap-4">
-            <Link href="#" className="px-8 py-3.5 rounded-full bg-[#2A75C1] text-white font-semibold hover:bg-[#2A75C1]/90 transition-all text-sm md:text-base inline-flex items-center justify-center">
-              Get eduMEET
-            </Link>
-            <Link href="#" className="px-8 py-3.5 rounded-full bg-transparent text-[#001D2E] font-semibold hover:bg-slate-100 transition-all text-sm md:text-base inline-flex items-center gap-2">
-              Contact WACREN <span aria-hidden="true">&rarr;</span>
-            </Link>
+        <section className="w-full bg-slate-50 py-24 px-4 border-t border-slate-200">
+          <div className="max-w-[800px] mx-auto flex flex-col items-center text-center">
+            <h2 className="text-3xl font-serif text-[#001D2E] mb-4">
+              Bring eduMEET to your campus
+            </h2>
+            <p className="text-base text-slate-600 mb-10 max-w-xl">
+              Find out if your NREN has joined, or tell us you're interested.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center">
+              <Link href="#" className="group inline-flex items-center justify-center px-6 py-3 text-sm font-bold text-white transition-all bg-[#F1921A] hover:bg-[#D97D12] w-full sm:w-auto border border-transparent rounded-none shadow-none">
+                Get eduMEET
+              </Link>
+              <Link href="#" className="group inline-flex items-center justify-center px-6 py-3 text-sm font-bold text-[#001D2E] transition-all bg-white hover:bg-slate-50 w-full sm:w-auto border border-slate-300 rounded-none shadow-none">
+                Contact WACREN
+              </Link>
+            </div>
           </div>
-          
         </section>
 
       </main>

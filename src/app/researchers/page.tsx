@@ -2,6 +2,7 @@
 
 import { PageTransition } from "@/components/page-transition";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function ResearchersPage() {
   return (
@@ -145,27 +146,22 @@ export default function ResearchersPage() {
         </section>
 
         {/* FINAL CTA SECTION */}
-        <section className="w-full bg-[#003B5C] py-24 md:py-32 px-4">
-          <div className="max-w-[1000px] mx-auto flex flex-col items-center text-center">
-            
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8 tracking-tight text-balance">
+        <section className="w-full bg-slate-50 py-24 px-4 border-t border-slate-200">
+          <div className="max-w-[800px] mx-auto flex flex-col items-center text-center">
+            <h2 className="text-3xl font-serif text-[#001D2E] mb-4">
               Planning a research event?
             </h2>
-            
-            <p className="text-lg md:text-xl text-white/80 font-medium leading-relaxed max-w-2xl mb-12 text-balance">
+            <p className="text-base text-slate-600 mb-10 max-w-xl">
               Check whether your institution has access, or ask your IT office to connect.
             </p>
-            
-            <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
-              <a href="#" className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-bold text-[#003B5C] bg-white rounded-full hover:bg-slate-100 transition-all group">
+            <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center">
+              <Link href="#" className="group inline-flex items-center justify-center px-6 py-3 text-sm font-bold text-white transition-all bg-[#F1921A] hover:bg-[#D97D12] w-full sm:w-auto border border-transparent rounded-none shadow-none">
                 Get eduMEET
-                <svg className="w-5 h-5 ml-2 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
-              </a>
-              <a href="#" className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white border-2 border-white/20 rounded-full hover:bg-white/10 transition-all">
+              </Link>
+              <Link href="#" className="group inline-flex items-center justify-center px-6 py-3 text-sm font-bold text-[#001D2E] transition-all bg-white hover:bg-slate-50 w-full sm:w-auto border border-slate-300 rounded-none shadow-none">
                 Read FAQ
-              </a>
+              </Link>
             </div>
-
           </div>
         </section>
 

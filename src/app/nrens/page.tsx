@@ -166,7 +166,7 @@ export default function NRENsPage() {
 
             {/* Bottom CTA */}
             <div className="flex flex-col items-center">
-              <a href="#" className="group inline-flex items-center justify-between px-8 py-5 text-sm md:text-base font-bold text-white transition-all bg-[#003B5C] rounded-xl hover:bg-[#002840] border border-transparent w-full sm:w-auto">
+              <a href="#" className="group inline-flex items-center justify-between px-8 py-5 text-sm md:text-base font-bold text-white transition-all bg-[#003B5C] rounded-none shadow-none border border-transparent hover:bg-[#002840] w-full sm:w-auto">
                 Compare participation options
                 <svg className="w-5 h-5 ml-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
               </a>
@@ -193,7 +193,7 @@ export default function NRENsPage() {
                 <p className="text-slate-600 font-medium leading-relaxed mb-8 flex-grow">
                   Centrally managed, locally hosted. Architecture, routing, governance and roadmap.
                 </p>
-                <a href="#" className="group inline-flex items-center justify-between px-6 py-4 text-sm font-bold text-[#001D2E] transition-all bg-white border border-slate-200 rounded-xl hover:bg-slate-50 hover:border-slate-300 w-full mt-auto">
+                <a href="#" className="group inline-flex items-center justify-between px-6 py-4 text-sm font-bold text-[#001D2E] transition-all bg-white border border-slate-200 rounded-none shadow-none hover:bg-slate-50 hover:border-slate-300 w-full mt-auto">
                   Read the model
                   <svg className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
                 </a>
@@ -209,7 +209,7 @@ export default function NRENsPage() {
                 <p className="text-slate-600 font-medium leading-relaxed mb-8 flex-grow">
                   Core-to-slot conversion, room categories, subscriber model and contributor checklist.
                 </p>
-                <a href="#" className="group inline-flex items-center justify-between px-6 py-4 text-sm font-bold text-[#001D2E] transition-all bg-white border border-slate-200 rounded-xl hover:bg-slate-50 hover:border-slate-300 w-full mt-auto">
+                <a href="#" className="group inline-flex items-center justify-between px-6 py-4 text-sm font-bold text-[#001D2E] transition-all bg-white border border-slate-200 rounded-none shadow-none hover:bg-slate-50 hover:border-slate-300 w-full mt-auto">
                   See options
                   <svg className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
                 </a>
@@ -225,7 +225,7 @@ export default function NRENsPage() {
                 <p className="text-slate-600 font-medium leading-relaxed mb-8 flex-grow">
                   Server sizing, firewall rules, DNS and SSO/OIDC configuration.
                 </p>
-                <a href="#" className="group inline-flex items-center justify-between px-6 py-4 text-sm font-bold text-white transition-all bg-[#003B5C] border border-transparent rounded-xl hover:bg-[#002840] w-full mt-auto">
+                <a href="#" className="group inline-flex items-center justify-between px-6 py-4 text-sm font-bold text-white transition-all bg-[#003B5C] border border-transparent rounded-none shadow-none hover:bg-[#002840] w-full mt-auto">
                   View requirements
                   <svg className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
                 </a>
@@ -247,7 +247,7 @@ export default function NRENsPage() {
               Ready-made materials to introduce eduMEET to universities in your country: a leadership brief, a slide deck, posters and email templates you can brand as your own.
             </p>
             
-            <a href="#" className="group inline-flex items-center justify-center px-8 py-5 text-base md:text-lg font-bold text-[#003B5C] transition-all bg-white rounded-xl hover:bg-slate-100 gap-3 w-full sm:w-auto shadow-sm">
+            <a href="#" className="group inline-flex items-center justify-center px-8 py-5 text-base md:text-lg font-bold text-[#003B5C] transition-all bg-white rounded-none shadow-none border border-slate-300 hover:bg-slate-100 gap-3 w-full sm:w-auto">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
               Download the NREN outreach kit
             </a>
