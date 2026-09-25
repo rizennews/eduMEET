@@ -23,13 +23,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://wacren.edumeet.africa",
+    url: "https://edumeet.africa",
     title: "eduMEET Africa",
     description: "The video platform built for African research and education communities.",
     siteName: "eduMEET Africa",
     images: [
       {
-        url: "/interface.jpg",
+        url: "/social-share.jpg",
         width: 1200,
         height: 630,
         alt: "eduMEET Africa Interface",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "eduMEET Africa",
     description: "The video platform built for African research and education communities.",
-    images: ["/interface.jpg"],
+    images: ["/social-share.jpg"],
   },
   robots: {
     index: true,
