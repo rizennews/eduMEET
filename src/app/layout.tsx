@@ -110,6 +110,22 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className="min-h-full flex flex-col bg-background text-foreground">
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              console.log("%cBuilt by Padmore Aning", "font-size: 24px; font-weight: bold; color: #F1921A; font-family: sans-serif;");
+              console.log("%chttps://padmoreaning.com", "font-size: 14px; color: #003B5C; font-family: sans-serif;");
+              console.log(\`
+  _____          _____  __  __  ____  _____  ______ 
+ |  __ \\   /\\   |  __ \\|  \\/  |/ __ \\|  __ \\|  ____|
+ | |__) | /  \\  | |  | | \\  / | |  | | |__) | |__   
+ |  ___/ / /\\ \\ | |  | | |\\/| | |  | |  _  /|  __|  
+ | |    / ____ \\| |__| | |  | | |__| | | \\ \\| |____ 
+ |_|   /_/    \\_\\_____/|_|  |_|\\____/|_|  \\_\\______|
+              \`);
+            `
+          }}
+        />
         <Providers>
           <Navigation />
           {children}
