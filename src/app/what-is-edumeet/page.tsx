@@ -50,7 +50,10 @@ export default function WhatIsEdumeet() {
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
               className="flex flex-col space-y-6"
             >
-              <p className="text-xl md:text-2xl lg:text-[1.75rem] text-[#001D2E] leading-relaxed font-semibold tracking-tight text-balance">
+              <p className="text-xl md:text-2xl lg:text-[1.75rem] text-[#001D2E] leading-relaxed font-semibold tracking-tight text-balance mb-2">
+                eduMEET is an open-source video conferencing service designed by and for the research and education community. In Africa, WACREN runs it as the African eduMEET Federation, so universities can meet, teach and collaborate on infrastructure they trust.
+              </p>
+              <p className="text-lg md:text-xl text-slate-600 leading-relaxed max-w-xl mb-2">
                 You click a link, sign in with your university account and you&apos;re in a meeting. Behind the scenes, the video travels over research and education networks instead of a commercial company&apos;s servers.
               </p>
               <p className="text-lg md:text-xl text-slate-600 leading-relaxed max-w-xl">

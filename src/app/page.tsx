@@ -48,7 +48,7 @@ export default function Home() {
                   <Link href="https://wacren.edumeet.africa/" target="_blank" rel="noopener noreferrer" className="w-full sm:flex-1 px-4 sm:px-0 py-3 text-sm bg-[#F1921A] text-white font-bold hover:bg-[#D97D12] transition-colors text-center border border-transparent rounded-full shadow-none">
                     Test eduMEET
                   </Link>
-                  <Link href="#" className="w-full sm:flex-[1.5] px-4 sm:px-0 py-3 text-sm bg-white text-[#001D2E] font-bold hover:bg-slate-100 transition-colors text-center border border-transparent rounded-full shadow-none">
+                  <Link href="/get-started" className="w-full sm:flex-[1.5] px-4 sm:px-0 py-3 text-sm bg-white text-[#001D2E] font-bold hover:bg-slate-100 transition-colors text-center border border-transparent rounded-full shadow-none">
                     Get eduMEET at your university
                   </Link>
                   <Link href="/what-is-edumeet" className="w-full sm:flex-1 px-4 sm:px-0 py-3 text-sm bg-transparent border border-white/30 text-white font-bold hover:bg-white/10 transition-colors text-center rounded-full shadow-none whitespace-nowrap">
@@ -128,7 +128,7 @@ export default function Home() {
                   </p>
                   <span className="text-white text-xl font-light group-hover:translate-x-1 transition-transform">&rarr;</span>
                 </div>
-                <Link href="#" className="absolute inset-0 z-20"><span className="sr-only">For teaching</span></Link>
+                <Link href="/students-lecturers" className="absolute inset-0 z-20"><span className="sr-only">For teaching</span></Link>
               </motion.div>
 
               {/* Card 2: Researcher */}
@@ -152,7 +152,7 @@ export default function Home() {
                   </p>
                   <span className="text-white text-xl font-light group-hover:translate-x-1 transition-transform">&rarr;</span>
                 </div>
-                <Link href="#" className="absolute inset-0 z-20"><span className="sr-only">For research</span></Link>
+                <Link href="/researchers" className="absolute inset-0 z-20"><span className="sr-only">For research</span></Link>
               </motion.div>
 
               {/* Card 3: University Leadership */}
@@ -176,7 +176,7 @@ export default function Home() {
                   </p>
                   <span className="text-white text-xl font-light group-hover:translate-x-1 transition-transform">&rarr;</span>
                 </div>
-                <Link href="#" className="absolute inset-0 z-20"><span className="sr-only">For leadership</span></Link>
+                <Link href="/leadership" className="absolute inset-0 z-20"><span className="sr-only">For leadership</span></Link>
               </motion.div>
 
               {/* Card 4: IT Directors */}
@@ -200,7 +200,7 @@ export default function Home() {
                   </p>
                   <span className="text-white text-xl font-light group-hover:translate-x-1 transition-transform">&rarr;</span>
                 </div>
-                <Link href="#" className="absolute inset-0 z-20"><span className="sr-only">For IT</span></Link>
+                <Link href="/it-directors" className="absolute inset-0 z-20"><span className="sr-only">For IT</span></Link>
               </motion.div>
 
               {/* Card 5: NREN */}
@@ -224,7 +224,7 @@ export default function Home() {
                   </p>
                   <span className="text-white text-xl font-light group-hover:translate-x-1 transition-transform">&rarr;</span>
                 </div>
-                <Link href="#" className="absolute inset-0 z-20"><span className="sr-only">For NRENs</span></Link>
+                <Link href="/nrens" className="absolute inset-0 z-20"><span className="sr-only">For NRENs</span></Link>
               </motion.div>
 
             </div>
@@ -290,7 +290,7 @@ export default function Home() {
                 
               </div>
               
-              <Link href="#" className="inline-flex items-center justify-center w-fit px-8 py-4 bg-[#001D2E] text-white rounded-none shadow-none border border-transparent font-semibold hover:bg-[#F1921A] transition-all gap-2 group mt-4">
+              <Link href="/how-it-works" className="inline-flex items-center justify-center w-fit px-8 py-4 bg-[#001D2E] text-white rounded-none shadow-none border border-transparent font-semibold hover:bg-[#F1921A] transition-all gap-2 group mt-4">
                 Learn more about eduMEET
                 <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
               </Link>
@@ -465,10 +465,10 @@ export default function Home() {
 
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link href="#" className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-[#8E1B73] text-white rounded-none shadow-none border border-transparent font-semibold hover:bg-[#8E1B73]/90 transition-all">
+              <Link href="/nren-hub" className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-[#8E1B73] text-white rounded-none shadow-none border border-transparent font-semibold hover:bg-[#8E1B73]/90 transition-all">
                 Check if your country is connected
               </Link>
-              <Link href="#" className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-slate-100 text-[#001D2E] rounded-none shadow-none border border-transparent font-semibold hover:bg-slate-200 transition-all">
+              <Link href="/how-it-works" className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-slate-100 text-[#001D2E] rounded-none shadow-none border border-transparent font-semibold hover:bg-slate-200 transition-all">
                 See how it works
               </Link>
             </div>
@@ -764,7 +764,7 @@ export default function Home() {
               <Link href="/get-started" className="group inline-flex items-center justify-center px-6 py-3 text-sm font-bold text-white transition-all bg-[#F1921A] hover:bg-[#D97D12] w-full sm:w-auto border border-transparent rounded-none shadow-none">
                 Get eduMEET
               </Link>
-              <Link href="#" className="group inline-flex items-center justify-center px-6 py-3 text-sm font-bold text-[#001D2E] transition-all bg-white hover:bg-slate-50 w-full sm:w-auto border border-slate-300 rounded-none shadow-none">
+              <Link href="mailto:info@wacren.net" className="group inline-flex items-center justify-center px-6 py-3 text-sm font-bold text-[#001D2E] transition-all bg-white hover:bg-slate-50 w-full sm:w-auto border border-slate-300 rounded-none shadow-none">
                 Contact WACREN
               </Link>
             </div>
