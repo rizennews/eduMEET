@@ -23,15 +23,24 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://edumeetafrica.com",
-    title: "Edumeet Africa",
-    description: "The premier platform connecting educators, students, and institutions across the continent.",
-    siteName: "Edumeet Africa",
+    url: "https://wacren.edumeet.africa",
+    title: "eduMEET Africa",
+    description: "The video platform built for African research and education communities.",
+    siteName: "eduMEET Africa",
+    images: [
+      {
+        url: "/interface.jpg",
+        width: 1200,
+        height: 630,
+        alt: "eduMEET Africa Interface",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Edumeet Africa",
-    description: "The premier platform connecting educators, students, and institutions across the continent.",
+    title: "eduMEET Africa",
+    description: "The video platform built for African research and education communities.",
+    images: ["/interface.jpg"],
   },
   robots: {
     index: true,

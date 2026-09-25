@@ -25,15 +25,6 @@ export default function FederationModelPage() {
               </h1>
             </motion.div>
 
-            {/* Subtitle / Description */}
-            <motion.p 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-              className="text-lg md:text-xl xl:text-2xl text-white/80 max-w-3xl text-balance leading-relaxed font-medium"
-            >
-              Architecture and governance of the African eduMEET infrastructure.
-            </motion.p>
 
           </div>
         </section>

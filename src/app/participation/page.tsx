@@ -26,16 +26,6 @@ export default function ParticipationPage() {
               </h1>
             </motion.div>
 
-            {/* Subtitle / Description */}
-            <motion.p 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-              className="text-lg md:text-xl xl:text-2xl text-white/80 max-w-4xl text-balance leading-relaxed font-medium mb-12"
-            >
-              The African eduMEET Federation is seeded by WACREN and built by the NRENs that join it. Contribute media-node capacity, become part of the shared pool, and run your own trusted video service under your own domain.
-            </motion.p>
-
 
 
           </div>

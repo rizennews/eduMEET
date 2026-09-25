@@ -19,20 +19,12 @@ export default function LeadershipPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
             >
-              <h1 className="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tighter text-white mb-8 text-balance">
+              <h1 className="text-5xl md:text-6xl xl:text-7x2 font-bold tracking-tighter text-white mb-8 text-balance">
                 A video platform your university controls
               </h1>
             </motion.div>
 
-            {/* Subtitle / Description */}
-            <motion.p 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-              className="text-lg md:text-xl xl:text-2xl text-white/80 max-w-3xl text-balance leading-relaxed font-medium"
-            >
-              For Vice Chancellors, Registrars and IT directors weighing the cost, security and long-term fit of their video conferencing.
-            </motion.p>
+
 
           </div>
         </section>

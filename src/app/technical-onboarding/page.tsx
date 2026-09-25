@@ -25,17 +25,6 @@ export default function TechnicalOnboardingPage() {
                 Federation onboarding
               </h1>
             </motion.div>
-
-            {/* Subtitle / Description */}
-            <motion.p 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-              className="text-lg md:text-xl xl:text-2xl text-white/80 max-w-4xl text-balance leading-relaxed font-medium mb-12"
-            >
-              Technical requirements and configuration steps for NRENs and institutions joining the African eduMEET Federation as infrastructure contributors.
-            </motion.p>
-
             {/* Action Buttons */}
 
 
