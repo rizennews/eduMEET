@@ -51,7 +51,7 @@ export default function Home() {
                   <Link href="#" className="w-full sm:flex-[1.5] px-4 sm:px-0 py-3 text-sm bg-white text-[#001D2E] font-bold hover:bg-slate-100 transition-colors text-center border border-transparent rounded-full shadow-none">
                     Get eduMEET at your university
                   </Link>
-                  <Link href="/how-it-works" className="w-full sm:flex-1 px-4 sm:px-0 py-3 text-sm bg-transparent border border-white/30 text-white font-bold hover:bg-white/10 transition-colors text-center rounded-full shadow-none whitespace-nowrap">
+                  <Link href="/what-is-edumeets" className="w-full sm:flex-1 px-4 sm:px-0 py-3 text-sm bg-transparent border border-white/30 text-white font-bold hover:bg-white/10 transition-colors text-center rounded-full shadow-none whitespace-nowrap">
                     What is eduMEET
                   </Link>
                 </motion.div>
@@ -236,7 +236,7 @@ export default function Home() {
           {/* Subtle background glow */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#F1921A]/5 rounded-full blur-[120px] pointer-events-none"></div>
           
-          <div className="max-w-4xl mx-auto flex flex-col items-center relative z-10 text-center">
+          <div className="max-w-[1400px] mx-auto flex flex-col items-center relative z-10 text-center">
             
             {/* Content - Text & Features */}
             <motion.div 
@@ -256,36 +256,36 @@ export default function Home() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full mb-12">
                 
                 {/* Premium Feature Card 1 */}
-                <div className="flex flex-col items-center text-center gap-4 bg-white p-8 rounded-[24px] shadow-[0_2px_10px_rgba(0,0,0,0.02)] border border-black/[0.03]">
-                  <div className="text-[#8E1B73] shrink-0 bg-[#8E1B73]/10 p-4 rounded-full">
-                    <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>
+                <div className="flex flex-col gap-1 bg-white py-5 px-6 rounded-[24px] shadow-[0_2px_10px_rgba(0,0,0,0.02)] border border-black/[0.03]">
+                  <div className="flex items-center gap-3">
+                    <div className="text-[#8E1B73] shrink-0">
+                      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>
+                    </div>
+                    <h4 className="text-lg font-bold text-[#001D2E] tracking-tight">Open in your browser</h4>
                   </div>
-                  <div className="flex flex-col justify-center">
-                    <h4 className="text-lg font-bold text-[#001D2E] mb-2 tracking-tight">Open in your browser</h4>
-                    <p className="text-sm text-slate-500 leading-relaxed font-medium">Nothing to download or install, on any device.</p>
-                  </div>
+                  <p className="text-sm text-slate-500 leading-relaxed font-medium pl-9 text-left">Nothing to download or install, on any device.</p>
                 </div>
 
                 {/* Premium Feature Card 2 */}
-                <div className="flex flex-col items-center text-center gap-4 bg-white p-8 rounded-[24px] shadow-[0_2px_10px_rgba(0,0,0,0.02)] border border-black/[0.03]">
-                  <div className="text-[#8E1B73] shrink-0 bg-[#8E1B73]/10 p-4 rounded-full">
-                    <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" /></svg>
+                <div className="flex flex-col gap-1 bg-white py-5 px-6 rounded-[24px] shadow-[0_2px_10px_rgba(0,0,0,0.02)] border border-black/[0.03]">
+                  <div className="flex items-center gap-3">
+                    <div className="text-[#8E1B73] shrink-0">
+                      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" /></svg>
+                    </div>
+                    <h4 className="text-lg font-bold text-[#001D2E] tracking-tight">Single Sign-On ready</h4>
                   </div>
-                  <div className="flex flex-col justify-center">
-                    <h4 className="text-lg font-bold text-[#001D2E] mb-2 tracking-tight">Single Sign-On ready</h4>
-                    <p className="text-sm text-slate-500 leading-relaxed font-medium">Log in instantly with your existing university credentials.</p>
-                  </div>
+                  <p className="text-sm text-slate-500 leading-relaxed font-medium pl-9 text-left">Log in instantly with your existing university credentials.</p>
                 </div>
 
                 {/* Premium Feature Card 3 */}
-                <div className="flex flex-col items-center text-center gap-4 bg-white p-8 rounded-[24px] shadow-[0_2px_10px_rgba(0,0,0,0.02)] border border-black/[0.03]">
-                  <div className="text-[#8E1B73] shrink-0 bg-[#8E1B73]/10 p-4 rounded-full">
-                    <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
+                <div className="flex flex-col gap-1 bg-white py-5 px-6 rounded-[24px] shadow-[0_2px_10px_rgba(0,0,0,0.02)] border border-black/[0.03]">
+                  <div className="flex items-center gap-3">
+                    <div className="text-[#8E1B73] shrink-0">
+                      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
+                    </div>
+                    <h4 className="text-lg font-bold text-[#001D2E] tracking-tight">Your university&apos;s brand</h4>
                   </div>
-                  <div className="flex flex-col justify-center">
-                    <h4 className="text-lg font-bold text-[#001D2E] mb-2 tracking-tight">Your university&apos;s brand</h4>
-                    <p className="text-sm text-slate-500 leading-relaxed font-medium">Your institution&apos;s web address and logo, not a vendor&apos;s.</p>
-                  </div>
+                  <p className="text-sm text-slate-500 leading-relaxed font-medium pl-9 text-left">Your institution&apos;s web address and logo, not a vendor&apos;s.</p>
                 </div>
                 
               </div>
