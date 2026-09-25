@@ -113,12 +113,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script
           dangerouslySetInnerHTML={{
             __html: `
-              console.log("%cBuilt by Padmore Aning", "font-size: 24px; font-weight: bold; color: #F1921A; font-family: sans-serif; margin-top: 10px;");
-              console.log("%chttps://padmoreaning.com", "font-size: 14px; color: #003B5C; font-family: sans-serif; margin-bottom: 10px;");
-              console.log(
-                "%c ", 
-                "font-size: 1px; padding: 150px 150px; background-image: url('/padmore-hero.jpeg'); background-size: contain; background-repeat: no-repeat; background-position: center; border-radius: 8px;"
-              );
+              setTimeout(function() {
+                var imgUrl = window.location.origin + '/padmore-hero.jpeg';
+                console.log("%cBuilt by Padmore Aning", "font-size: 24px; font-weight: bold; color: #F1921A; font-family: sans-serif; margin-top: 10px;");
+                console.log("%chttps://padmoreaning.com", "font-size: 14px; color: #003B5C; font-family: sans-serif; margin-bottom: 10px;");
+                console.log(
+                  "%c+", 
+                  "font-size: 1px; padding: 150px 150px; background-image: url('" + imgUrl + "'); background-size: contain; background-repeat: no-repeat; background-position: left center; color: transparent; border-radius: 8px;"
+                );
+              }, 500);
             `
           }}
         />
