@@ -113,16 +113,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script
           dangerouslySetInnerHTML={{
             __html: `
-              console.log("%cBuilt by Padmore Aning", "font-size: 24px; font-weight: bold; color: #F1921A; font-family: sans-serif;");
-              console.log("%chttps://padmoreaning.com", "font-size: 14px; color: #003B5C; font-family: sans-serif;");
-              console.log(\`
-  _____          _____  __  __  ____  _____  ______ 
- |  __ \\   /\\   |  __ \\|  \\/  |/ __ \\|  __ \\|  ____|
- | |__) | /  \\  | |  | | \\  / | |  | | |__) | |__   
- |  ___/ / /\\ \\ | |  | | |\\/| | |  | |  _  /|  __|  
- | |    / ____ \\| |__| | |  | | |__| | | \\ \\| |____ 
- |_|   /_/    \\_\\_____/|_|  |_|\\____/|_|  \\_\\______|
-              \`);
+              console.log("%cBuilt by Padmore Aning", "font-size: 24px; font-weight: bold; color: #F1921A; font-family: sans-serif; margin-top: 10px;");
+              console.log("%chttps://padmoreaning.com", "font-size: 14px; color: #003B5C; font-family: sans-serif; margin-bottom: 10px;");
+              console.log(
+                "%c ", 
+                "font-size: 1px; padding: 150px 150px; background-image: url('/padmore-hero.jpeg'); background-size: contain; background-repeat: no-repeat; background-position: center; border-radius: 8px;"
+              );
             `
           }}
         />
