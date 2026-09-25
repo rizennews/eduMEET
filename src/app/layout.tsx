@@ -32,8 +32,11 @@ export const metadata: Metadata = {
     "secure academic collaboration",
     "WebRTC",
   ],
-  authors: [{ name: "WACREN", url: "https://wacren.net" }],
-  creator: "African eduMEET Federation",
+  authors: [
+    { name: "WACREN", url: "https://wacren.net" },
+    { name: "Padmore Aning", url: "https://padmoreaning.com" }
+  ],
+  creator: "Padmore Aning & African eduMEET Federation",
   publisher: "WACREN",
   openGraph: {
     type: "website",
@@ -76,12 +79,36 @@ import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "eduMEET Africa",
+    "url": "https://edumeet.africa",
+    "description": "The African eduMEET Federation provides a secure, open-source video conferencing platform.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "WACREN",
+      "url": "https://wacren.net"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Padmore Aning",
+      "url": "https://padmoreaning.com"
+    }
+  };
+
   return (
     <html
       lang="en"
       className={`${outfit.variable} ${geistMono.variable} h-full antialiased`}
       suppressHydrationWarning
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <Providers>
           <Navigation />

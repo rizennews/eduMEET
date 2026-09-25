@@ -1,26 +1,28 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://edumeetafrica.com";
-
-  return [
-    {
-      url: `${baseUrl}`,
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 1,
-    },
-    {
-      url: `${baseUrl}/about`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/contact`,
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.5,
-    },
+  const baseUrl = "https://edumeet.africa";
+  
+  const routes = [
+    "",
+    "/what-is-edumeet",
+    "/how-it-works",
+    "/nren-hub",
+    "/nrens",
+    "/leadership",
+    "/it-directors",
+    "/researchers",
+    "/students-lecturers",
+    "/participation",
+    "/technical-onboarding",
+    "/faq",
+    "/get-started",
   ];
+
+  return routes.map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: route === "" ? "weekly" : "monthly",
+    priority: route === "" ? 1.0 : 0.8,
+  }));
 }
