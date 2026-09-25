@@ -65,10 +65,18 @@ export default function TechnicalOnboardingPage() {
               <p>
                 Assignment to a node is based on geographical location and node load. If a node reaches maximum load, subsequent participants use a different node, and the system routes between nodes.
               </p>
-              <div className="bg-slate-50 border-l-4 border-[#2A75C1] p-6 mt-4">
-                <p className="text-base md:text-lg text-slate-700">
-                  <strong className="text-[#001D2E]">Note:</strong> Service subscribers don't need local media-node infrastructure. The server, firewall and DNS requirements below apply to infrastructure contributors. Contact <a href="mailto:PMO@wacren.net" className="text-[#2A75C1] hover:underline font-bold">PMO@wacren.net</a> about subscriber onboarding.
-                </p>
+              <div className="border border-slate-200 bg-white p-6 md:p-8 mt-8 flex flex-col sm:flex-row gap-4 sm:gap-6 items-start">
+                <div className="flex-shrink-0 w-12 h-12 bg-slate-50 border border-slate-200 flex items-center justify-center">
+                  <svg className="w-6 h-6 text-[#2A75C1]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 className="text-sm font-bold tracking-wider uppercase text-[#001D2E] mb-2">Note for Subscribers</h4>
+                  <p className="text-base text-slate-600 leading-relaxed">
+                    Service subscribers don't need local media-node infrastructure. The server, firewall and DNS requirements below apply to infrastructure contributors. Contact <a href="mailto:PMO@wacren.net" className="text-[#2A75C1] hover:underline font-bold">PMO@wacren.net</a> about subscriber onboarding.
+                  </p>
+                </div>
               </div>
             </div>
 
@@ -82,7 +90,9 @@ export default function TechnicalOnboardingPage() {
             {/* Left Column: Header */}
             <div className="md:col-span-5 lg:col-span-4 flex flex-col md:pr-8">
               <div className="text-sm font-bold tracking-wider uppercase text-[#8E1B73] mb-4 flex items-center gap-2">
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" /></svg>
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
                 Benefits
               </div>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#001D2E] leading-tight text-balance">

@@ -155,10 +155,10 @@ export default function ResearchersPage() {
               Check whether your institution has access, or ask your IT office to connect.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center">
-              <Link href="#" className="group inline-flex items-center justify-center px-6 py-3 text-sm font-bold text-white transition-all bg-[#F1921A] hover:bg-[#D97D12] w-full sm:w-auto border border-transparent rounded-none shadow-none">
+              <Link href="/get-started" className="group inline-flex items-center justify-center px-6 py-3 text-sm font-bold text-white transition-all bg-[#F1921A] hover:bg-[#D97D12] w-full sm:w-auto border border-transparent rounded-none shadow-none">
                 Get eduMEET
               </Link>
-              <Link href="#" className="group inline-flex items-center justify-center px-6 py-3 text-sm font-bold text-[#001D2E] transition-all bg-white hover:bg-slate-50 w-full sm:w-auto border border-slate-300 rounded-none shadow-none">
+              <Link href="/faq" className="group inline-flex items-center justify-center px-6 py-3 text-sm font-bold text-[#001D2E] transition-all bg-white hover:bg-slate-50 w-full sm:w-auto border border-slate-300 rounded-none shadow-none">
                 Read FAQ
               </Link>
             </div>

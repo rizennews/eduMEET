@@ -20,7 +20,7 @@ export default function HowItWorksPage() {
               transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
               className="w-full"
             >
-              <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold tracking-tighter text-white mb-8 whitespace-nowrap">
+              <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold tracking-tighter text-white mb-8">
                 How eduMEET works
               </h1>
             </motion.div>

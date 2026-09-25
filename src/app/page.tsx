@@ -27,44 +27,46 @@ export default function Home() {
                 </h1>
               </motion.div>
 
-              {/* Subtitle */}
-              <motion.p 
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-                className="text-lg md:text-xl text-white/70 max-w-xl text-balance leading-relaxed font-medium mb-10"
-              >
-                Teach a class, supervise a thesis or host a conference from your browser. Sign in with your university account, on a service run by the research and education community, with meeting traffic carried on African networks.
-              </motion.p>
+              <div className="w-full max-w-[612px]">
+                {/* Subtitle */}
+                <motion.p 
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+                  className="text-lg md:text-xl text-white/70 leading-relaxed font-medium mb-10 text-justify"
+                >
+                  Teach a class, supervise a thesis or host a conference from your browser. Sign in with your university account, on a service run by the research and education community, with meeting traffic carried on African networks.
+                </motion.p>
 
-              {/* CTA Buttons */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
-                className="flex flex-col sm:flex-row flex-wrap items-center sm:items-start gap-4 mb-6"
-              >
-                <button className="w-full sm:w-auto px-8 py-3 rounded-full bg-[#F1921A] text-white font-semibold hover:bg-[#F1921A]/90 transition-all text-center">
-                  Test eduMEET
-                </button>
-                <button className="w-full sm:w-auto px-8 py-3 rounded-full bg-white text-[#003B5C] font-semibold hover:bg-white/90 transition-all text-center">
-                  Get eduMEET at your university
-                </button>
-                <button className="w-full sm:w-auto px-8 py-3 rounded-full bg-transparent border border-white/30 text-white font-semibold hover:bg-white/10 transition-all text-center">
-                  What is eduMEET
-                </button>
-              </motion.div>
+                {/* CTA Buttons */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
+                  className="flex flex-col sm:flex-row flex-wrap items-center sm:items-start justify-between gap-4 mb-6"
+                >
+                  <Link href="https://wacren.edumeet.africa/" target="_blank" rel="noopener noreferrer" className="w-full sm:flex-1 px-4 sm:px-0 py-3 text-sm bg-[#F1921A] text-white font-bold hover:bg-[#D97D12] transition-colors text-center border border-transparent rounded-full shadow-none">
+                    Test eduMEET
+                  </Link>
+                  <Link href="#" className="w-full sm:flex-[1.5] px-4 sm:px-0 py-3 text-sm bg-white text-[#001D2E] font-bold hover:bg-slate-100 transition-colors text-center border border-transparent rounded-full shadow-none">
+                    Get eduMEET at your university
+                  </Link>
+                  <Link href="/how-it-works" className="w-full sm:flex-1 px-4 sm:px-0 py-3 text-sm bg-transparent border border-white/30 text-white font-bold hover:bg-white/10 transition-colors text-center rounded-full shadow-none whitespace-nowrap">
+                    What is eduMEET
+                  </Link>
+                </motion.div>
 
-              {/* Trust Text */}
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-                className="text-sm text-white/50 max-w-xl mb-8 lg:mb-0"
-              >
-                Open source. Backed by WACREN and the European Union through AfricaConnect4. <br className="hidden sm:block" />
-                Running an NREN? <Link href="/nren-hub" className="text-white/80 hover:text-white underline decoration-white/30 underline-offset-4 transition-colors">Go to the NREN hub</Link>
-              </motion.p>
+                {/* Trust Text */}
+                <motion.p
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
+                  className="text-sm text-white/50 mb-8 lg:mb-0"
+                >
+                  Open source. Backed by WACREN and the European Union through AfricaConnect4. <br className="hidden sm:block" />
+                  Running an NREN? <Link href="/nren-hub" className="text-white/80 hover:text-white underline decoration-white/30 underline-offset-4 transition-colors">Go to the NREN hub</Link>
+                </motion.p>
+              </div>
             </div>
 
             {/* Right Column: Video */}
@@ -234,104 +236,65 @@ export default function Home() {
           {/* Subtle background glow */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#F1921A]/5 rounded-full blur-[120px] pointer-events-none"></div>
           
-          <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 lg:gap-24 items-center relative z-10">
+          <div className="max-w-4xl mx-auto flex flex-col items-center relative z-10 text-center">
             
-            {/* Left Content - Text & Features */}
+            {/* Content - Text & Features */}
             <motion.div 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-              className="flex flex-col w-full lg:w-[45%]"
+              className="flex flex-col w-full items-center"
             >
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter text-[#001D2E] mb-6 leading-[1.05]">
                 Easy to access. Easy to use
               </h2>
-              <p className="text-lg text-slate-500 mb-12 leading-relaxed max-w-xl font-medium">
+              <p className="text-lg text-slate-500 mb-16 leading-relaxed max-w-2xl font-medium">
                 eduMEET works exactly like the video tools you already know. The difference is who runs it: the global research and education community.
               </p>
               
-              <div className="flex flex-col gap-4 mb-12">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full mb-12">
                 
                 {/* Premium Feature Card 1 */}
-                <div className="flex items-start gap-5 bg-white p-6 rounded-[24px] shadow-[0_2px_10px_rgba(0,0,0,0.02)] border border-black/[0.03]">
-                  <div className="text-[#8E1B73] mt-1 shrink-0">
-                    <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>
+                <div className="flex flex-col items-center text-center gap-4 bg-white p-8 rounded-[24px] shadow-[0_2px_10px_rgba(0,0,0,0.02)] border border-black/[0.03]">
+                  <div className="text-[#8E1B73] shrink-0 bg-[#8E1B73]/10 p-4 rounded-full">
+                    <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>
                   </div>
-                  <div className="flex flex-col justify-center pt-1">
-                    <h4 className="text-lg font-bold text-[#001D2E] mb-1 tracking-tight">Open in your browser</h4>
+                  <div className="flex flex-col justify-center">
+                    <h4 className="text-lg font-bold text-[#001D2E] mb-2 tracking-tight">Open in your browser</h4>
                     <p className="text-sm text-slate-500 leading-relaxed font-medium">Nothing to download or install, on any device.</p>
                   </div>
                 </div>
 
                 {/* Premium Feature Card 2 */}
-                <div className="flex items-start gap-5 bg-white p-6 rounded-[24px] shadow-[0_2px_10px_rgba(0,0,0,0.02)] border border-black/[0.03]">
-                  <div className="text-[#8E1B73] mt-1 shrink-0">
-                    <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" /></svg>
+                <div className="flex flex-col items-center text-center gap-4 bg-white p-8 rounded-[24px] shadow-[0_2px_10px_rgba(0,0,0,0.02)] border border-black/[0.03]">
+                  <div className="text-[#8E1B73] shrink-0 bg-[#8E1B73]/10 p-4 rounded-full">
+                    <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" /></svg>
                   </div>
-                  <div className="flex flex-col justify-center pt-1">
-                    <h4 className="text-lg font-bold text-[#001D2E] mb-1 tracking-tight">Single Sign-On ready</h4>
+                  <div className="flex flex-col justify-center">
+                    <h4 className="text-lg font-bold text-[#001D2E] mb-2 tracking-tight">Single Sign-On ready</h4>
                     <p className="text-sm text-slate-500 leading-relaxed font-medium">Log in instantly with your existing university credentials.</p>
                   </div>
                 </div>
 
                 {/* Premium Feature Card 3 */}
-                <div className="flex items-start gap-5 bg-white p-6 rounded-[24px] shadow-[0_2px_10px_rgba(0,0,0,0.02)] border border-black/[0.03]">
-                  <div className="text-[#8E1B73] mt-1 shrink-0">
-                    <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
+                <div className="flex flex-col items-center text-center gap-4 bg-white p-8 rounded-[24px] shadow-[0_2px_10px_rgba(0,0,0,0.02)] border border-black/[0.03]">
+                  <div className="text-[#8E1B73] shrink-0 bg-[#8E1B73]/10 p-4 rounded-full">
+                    <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
                   </div>
-                  <div className="flex flex-col justify-center pt-1">
-                    <h4 className="text-lg font-bold text-[#001D2E] mb-1 tracking-tight">Your university&apos;s brand</h4>
+                  <div className="flex flex-col justify-center">
+                    <h4 className="text-lg font-bold text-[#001D2E] mb-2 tracking-tight">Your university&apos;s brand</h4>
                     <p className="text-sm text-slate-500 leading-relaxed font-medium">Your institution&apos;s web address and logo, not a vendor&apos;s.</p>
                   </div>
                 </div>
                 
               </div>
               
-              <Link href="#" className="inline-flex items-center justify-center w-fit px-8 py-4 bg-[#001D2E] text-white rounded-none shadow-none border border-transparent font-semibold hover:bg-[#F1921A] transition-all gap-2 group">
+              <Link href="#" className="inline-flex items-center justify-center w-fit px-8 py-4 bg-[#001D2E] text-white rounded-none shadow-none border border-transparent font-semibold hover:bg-[#F1921A] transition-all gap-2 group mt-4">
                 Learn more about eduMEET
                 <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
               </Link>
             </motion.div>
-
-            {/* Right Image - SaaS Browser Mockup */}
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.9, rotateY: -15, rotateX: 10 }}
-              whileInView={{ opacity: 1, scale: 1, rotateY: 0, rotateX: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
-              className="w-full lg:w-[55%] perspective-1000"
-              style={{ perspective: "1000px" }}
-            >
-              <div className="relative w-full rounded-[24px] overflow-hidden bg-white shadow-[0_20px_60px_rgba(0,0,0,0.12)] border border-black/5">
-                
-                {/* Mock Browser Tab Bar */}
-                <div className="w-full h-12 bg-slate-50/80 backdrop-blur-md border-b border-black/5 flex items-center px-4 gap-2 relative z-10">
-                  <div className="flex gap-2">
-                    <div className="w-3 h-3 rounded-full bg-[#FF5F56] border border-black/10"></div>
-                    <div className="w-3 h-3 rounded-full bg-[#FFBD2E] border border-black/10"></div>
-                    <div className="w-3 h-3 rounded-full bg-[#27C93F] border border-black/10"></div>
-                  </div>
-                  {/* Mock URL Bar */}
-                  <div className="absolute left-1/2 -translate-x-1/2 w-[60%] md:w-1/2 lg:w-1/3 h-6 bg-black/5 rounded-md flex items-center justify-center px-2 overflow-hidden">
-                    <span className="text-[10px] font-medium text-slate-500 tracking-wider truncate">meet.your-university.edu</span>
-                  </div>
-                </div>
-
-                {/* The Image */}
-                <div className="relative aspect-[4/3] w-full bg-slate-100">
-                  <img 
-                    src="/browser-mockup.jpg" 
-                    alt="eduMEET Learning" 
-                    className="w-full h-full object-cover object-center"
-                  />
-                  {/* Subtle inner shadow for depth */}
-                  <div className="absolute inset-0 shadow-[inset_0_0_20px_rgba(0,0,0,0.05)] pointer-events-none"></div>
-                </div>
-
-              </div>
-            </motion.div>
-
           </div>
         </section>
 
@@ -614,215 +577,177 @@ export default function Home() {
           </div>
         </section>
 
-        {/* WACREN SEEDING SECTION */}
-        <section className="w-full bg-white py-24 px-4 border-t border-black/5">
-          <div className="max-w-7xl mx-auto flex flex-col">
+
+        {/* TESTIMONIALS SECTION (Hidden for now) */}
+        <section className="hidden w-full bg-[#F7F9FA] py-24 px-4 border-t border-black/5 overflow-hidden">
+          <div className="max-w-[1400px] mx-auto flex flex-col">
             
-            <div className="flex flex-col md:text-center max-w-3xl mx-auto mb-20">
-              <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-[#001D2E] mb-6">
-                WACREN is seeding the federation across West and Central Africa
-              </h2>
-              <p className="text-lg text-slate-500 font-normal leading-relaxed">
-                The service starts with coverage from day one, using servers already installed on WACREN&apos;s regional network.
-              </p>
-            </div>
-
-            {/* 3 Stats Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-[1px] bg-slate-200 border border-slate-200 mb-8">
-              
-              {/* Stat 1 */}
-              <div className="bg-white p-10 flex flex-col items-center text-center justify-center">
-                <div className="text-6xl font-bold text-[#8E1B73] tracking-tighter mb-4">12</div>
-                <h3 className="text-xl font-bold text-[#001D2E] tracking-tight mb-3">countries</h3>
-                <p className="text-slate-500 font-normal leading-relaxed text-sm max-w-xs">
-                  with backbone servers ready to carry meetings
-                </p>
-              </div>
-
-              {/* Stat 2 */}
-              <div className="bg-white p-10 flex flex-col items-center text-center justify-center">
-                <div className="text-6xl font-bold text-[#F1921A] tracking-tighter mb-4">AC4</div>
-                <h3 className="text-xl font-bold text-[#001D2E] tracking-tight mb-3">AfricaConnect4</h3>
-                <p className="text-slate-500 font-normal leading-relaxed text-sm max-w-xs">
-                  EU co-funded programme, 2025 to 2029
-                </p>
-              </div>
-
-              {/* Stat 3 */}
-              <div className="bg-white p-10 flex flex-col items-center text-center justify-center">
-                <div className="text-6xl font-bold text-[#2A75C1] tracking-tighter mb-4">Day 1</div>
-                <h3 className="text-xl font-bold text-[#001D2E] tracking-tight mb-3">coverage</h3>
-                <p className="text-slate-500 font-normal leading-relaxed text-sm max-w-xs">
-                  no waiting period for regional reach
-                </p>
-              </div>
-
-            </div>
-
-            {/* Logos */}
-            <div className="relative w-full overflow-hidden pt-12 pb-12 border-y border-slate-100">
-              
-              <div className="text-center mb-16 relative z-20">
-                <h3 className="text-2xl md:text-3xl text-slate-600 tracking-tight" style={{ fontFamily: "Georgia, serif" }}>
-                  Empowering <i className="font-serif">Exceptional</i> Teams <i className="font-serif">Worldwide</i>
-                </h3>
-              </div>
-
-              {/* Gradient masks for fading edges like the screenshot */}
-              <div className="absolute inset-y-0 left-0 w-24 md:w-64 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
-              <div className="absolute inset-y-0 right-0 w-24 md:w-64 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
-              
-              <div className="flex w-max animate-marquee hover:[animation-play-state:paused]">
-                {/* First set of logos */}
-                <div className="flex items-center justify-center gap-12 md:gap-24 flex-nowrap px-6 md:px-12">
-                  <img src="/wacren.svg" alt="WACREN" className="h-10 md:h-14 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" />
-                  <img src="/africaconnect4.png" alt="AfricaConnect4" className="h-10 md:h-14 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" />
-                  <img src="/EU-logo.png" alt="EU" className="h-10 md:h-14 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" />
-                  
-                  <div className="flex items-center gap-2 grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100">
-                    <img src="/GEANT-icon.svg" alt="GEANT" className="h-10 md:h-14 w-auto object-contain" />
-                    <img src="/GEANT-text.svg" alt="GEANT Text" className="h-5 md:h-7 w-auto object-contain" />
-                  </div>
-                  
-                  <img src="/PCSS.jpg" alt="PCSS" className="h-10 md:h-14 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100 mix-blend-multiply" />
-                  <img src="/edul.africa.png" alt="eduID.africa" className="h-8 md:h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" />
-                  <img src="/BonafID-Logo.png" alt="BonafID" className="h-8 md:h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" />
-                </div>
-                
-                {/* Duplicate set for seamless looping */}
-                <div className="flex items-center justify-center gap-12 md:gap-24 flex-nowrap px-6 md:px-12">
-                  <img src="/wacren.svg" alt="WACREN" className="h-10 md:h-14 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" />
-                  <img src="/africaconnect4.png" alt="AfricaConnect4" className="h-10 md:h-14 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" />
-                  <img src="/EU-logo.png" alt="EU" className="h-10 md:h-14 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" />
-                  
-                  <div className="flex items-center gap-2 grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100">
-                    <img src="/GEANT-icon.svg" alt="GEANT" className="h-10 md:h-14 w-auto object-contain" />
-                    <img src="/GEANT-text.svg" alt="GEANT Text" className="h-5 md:h-7 w-auto object-contain" />
-                  </div>
-                  
-                  <img src="/PCSS.jpg" alt="PCSS" className="h-10 md:h-14 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100 mix-blend-multiply" />
-                  <img src="/edul.africa.png" alt="eduID.africa" className="h-8 md:h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" />
-                  <img src="/BonafID-Logo.png" alt="BonafID" className="h-8 md:h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" />
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </section>
-
-        {/* TESTIMONIALS SECTION */}
-        <section className="w-full bg-[#F7F9FA] py-24 px-4 border-t border-black/5">
-          <div className="max-w-6xl mx-auto flex flex-col">
-            
-            <div className="flex flex-col text-center max-w-3xl mx-auto mb-16 relative">
+            <div className="flex flex-col md:text-center max-w-3xl mx-auto mb-16 relative">
               <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-[#001D2E]">
                 What early users say
               </h2>
             </div>
 
-            {/* Bento Grid / Masonry Layout */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Carousel Container */}
+            <div className="flex overflow-hidden w-full relative group">
+              {/* Fade masks for edges */}
+              <div className="absolute inset-y-0 left-0 w-12 md:w-24 bg-gradient-to-r from-[#F7F9FA] to-transparent z-10 pointer-events-none"></div>
+              <div className="absolute inset-y-0 right-0 w-12 md:w-24 bg-gradient-to-l from-[#F7F9FA] to-transparent z-10 pointer-events-none"></div>
               
-              {/* Row 1 */}
-              {/* Small Orange */}
-              <div className="bg-[#F1921A] p-8 rounded-2xl flex flex-col justify-between shadow-[0_2px_10px_rgba(0,0,0,0.02)] border border-black/5">
-                <p className="text-white font-semibold text-lg mb-8 leading-snug">
-                  &quot;Finally, a platform that genuinely understands our academic needs.&quot;
-                </p>
-                <div className="text-sm font-bold text-white">University of Lagos</div>
-              </div>
-
-              {/* Small Purple */}
-              <div className="bg-[#8E1B73] p-8 rounded-2xl flex flex-col justify-between shadow-[0_2px_10px_rgba(0,0,0,0.02)] border border-black/5">
-                <p className="text-white font-semibold text-lg mb-8 leading-snug">
-                  &quot;Seamless SSO integration saved us months of headaches.&quot;
-                </p>
-                <div className="text-sm font-bold text-white">WACREN IT</div>
-              </div>
-
-              {/* Wide White (Spans 2 cols) */}
-              <div className="bg-white p-8 rounded-2xl lg:col-span-2 flex flex-col justify-between shadow-[0_2px_10px_rgba(0,0,0,0.02)] border border-black/5">
-                <p className="text-[#001D2E] font-medium text-xl leading-relaxed mb-8">
-                  &quot;eduMEET has completely transformed how our researchers collaborate across borders. Running on our own NREN infrastructure gives us the security and performance we could never get from commercial vendors.&quot;
-                </p>
-                <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-full bg-slate-200 overflow-hidden">
-                    <img src="https://i.pravatar.cc/100?img=47" alt="Avatar" className="w-full h-full object-cover" />
+              <div className="flex w-max animate-marquee hover:[animation-play-state:paused] gap-6">
+                
+                {/* First Set */}
+                <div className="flex gap-6 items-stretch flex-nowrap px-3">
+                  
+                  {/* Testimonial 1 */}
+                  <div className="flex flex-col gap-4 bg-white p-8 rounded-[24px] shadow-[0_2px_10px_rgba(0,0,0,0.02)] border border-black/[0.03] shrink-0 w-[85vw] sm:w-[400px] lg:w-[450px]">
+                    <div className="text-[#8E1B73] shrink-0 bg-[#8E1B73]/5 p-4 rounded-full self-start">
+                      <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                    </div>
+                    <p className="text-[#001D2E] font-medium text-lg leading-relaxed flex-1">
+                      &quot;Finally, a platform that genuinely understands our academic needs. Our students find it incredibly intuitive.&quot;
+                    </p>
+                    <div className="mt-4 border-t border-slate-100 pt-6">
+                      <div className="text-base font-bold text-[#001D2E]">University of Lagos</div>
+                      <div className="text-sm font-medium text-slate-500">Student Union</div>
+                    </div>
                   </div>
-                  <div>
-                    <div className="text-sm font-bold text-[#001D2E]">Dr. Amina Diallo</div>
-                    <div className="text-xs font-medium text-slate-500">Director of Research, Cheikh Anta Diop University</div>
+
+                  {/* Testimonial 2 */}
+                  <div className="flex flex-col gap-4 bg-white p-8 rounded-[24px] shadow-[0_2px_10px_rgba(0,0,0,0.02)] border border-black/[0.03] shrink-0 w-[85vw] sm:w-[400px] lg:w-[450px]">
+                    <div className="text-[#8E1B73] shrink-0 bg-[#8E1B73]/5 p-4 rounded-full self-start">
+                      <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                    </div>
+                    <p className="text-[#001D2E] font-medium text-lg leading-relaxed flex-1">
+                      &quot;Seamless SSO integration saved us months of headaches. Having our university branding front and center is a huge plus.&quot;
+                    </p>
+                    <div className="mt-4 border-t border-slate-100 pt-6">
+                      <div className="text-base font-bold text-[#001D2E]">Sarah Ndegwa</div>
+                      <div className="text-sm font-medium text-slate-500">Head of IT Infrastructure</div>
+                    </div>
                   </div>
+
+                  {/* Testimonial 3 */}
+                  <div className="flex flex-col gap-4 bg-white p-8 rounded-[24px] shadow-[0_2px_10px_rgba(0,0,0,0.02)] border border-black/[0.03] shrink-0 w-[85vw] sm:w-[400px] lg:w-[450px]">
+                    <div className="text-[#8E1B73] shrink-0 bg-[#8E1B73]/5 p-4 rounded-full self-start">
+                      <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                    </div>
+                    <p className="text-[#001D2E] font-medium text-lg leading-relaxed flex-1">
+                      &quot;eduMEET has completely transformed how our researchers collaborate across borders. The security and performance are unmatched.&quot;
+                    </p>
+                    <div className="mt-4 border-t border-slate-100 pt-6">
+                      <div className="text-base font-bold text-[#001D2E]">Dr. Amina Diallo</div>
+                      <div className="text-sm font-medium text-slate-500">Director of Research, CADU</div>
+                    </div>
+                  </div>
+
+                  {/* Testimonial 4 */}
+                  <div className="flex flex-col gap-4 bg-white p-8 rounded-[24px] shadow-[0_2px_10px_rgba(0,0,0,0.02)] border border-black/[0.03] shrink-0 w-[85vw] sm:w-[400px] lg:w-[450px]">
+                    <div className="text-[#8E1B73] shrink-0 bg-[#8E1B73]/5 p-4 rounded-full self-start">
+                      <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                    </div>
+                    <p className="text-[#001D2E] font-medium text-lg leading-relaxed flex-1">
+                      &quot;Managing licenses used to be a nightmare. The pay-for-use model aligns perfectly with our academic calendar.&quot;
+                    </p>
+                    <div className="mt-4 border-t border-slate-100 pt-6">
+                      <div className="text-base font-bold text-[#001D2E]">Kwame Osei</div>
+                      <div className="text-sm font-medium text-slate-500">Chief Financial Officer, KNUST</div>
+                    </div>
+                  </div>
+
+                  {/* Testimonial 5 */}
+                  <div className="flex flex-col gap-4 bg-white p-8 rounded-[24px] shadow-[0_2px_10px_rgba(0,0,0,0.02)] border border-black/[0.03] shrink-0 w-[85vw] sm:w-[400px] lg:w-[450px]">
+                    <div className="text-[#8E1B73] shrink-0 bg-[#8E1B73]/5 p-4 rounded-full self-start">
+                      <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                    </div>
+                    <p className="text-[#001D2E] font-medium text-lg leading-relaxed flex-1">
+                      &quot;No more dropped calls during important international lectures. The open-source nature means absolute zero vendor lock-in.&quot;
+                    </p>
+                    <div className="mt-4 border-t border-slate-100 pt-6">
+                      <div className="text-base font-bold text-[#001D2E]">Professor Mensah</div>
+                      <div className="text-sm font-medium text-slate-500">WACREN IT</div>
+                    </div>
+                  </div>
+
+                </div>
+
+                {/* Second Set (Duplicate for seamless loop) */}
+                <div className="flex gap-6 items-stretch flex-nowrap px-3">
+                  
+                  {/* Testimonial 1 */}
+                  <div className="flex flex-col gap-4 bg-white p-8 rounded-[24px] shadow-[0_2px_10px_rgba(0,0,0,0.02)] border border-black/[0.03] shrink-0 w-[85vw] sm:w-[400px] lg:w-[450px]">
+                    <div className="text-[#8E1B73] shrink-0 bg-[#8E1B73]/5 p-4 rounded-full self-start">
+                      <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                    </div>
+                    <p className="text-[#001D2E] font-medium text-lg leading-relaxed flex-1">
+                      &quot;Finally, a platform that genuinely understands our academic needs. Our students find it incredibly intuitive.&quot;
+                    </p>
+                    <div className="mt-4 border-t border-slate-100 pt-6">
+                      <div className="text-base font-bold text-[#001D2E]">University of Lagos</div>
+                      <div className="text-sm font-medium text-slate-500">Student Union</div>
+                    </div>
+                  </div>
+
+                  {/* Testimonial 2 */}
+                  <div className="flex flex-col gap-4 bg-white p-8 rounded-[24px] shadow-[0_2px_10px_rgba(0,0,0,0.02)] border border-black/[0.03] shrink-0 w-[85vw] sm:w-[400px] lg:w-[450px]">
+                    <div className="text-[#8E1B73] shrink-0 bg-[#8E1B73]/5 p-4 rounded-full self-start">
+                      <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                    </div>
+                    <p className="text-[#001D2E] font-medium text-lg leading-relaxed flex-1">
+                      &quot;Seamless SSO integration saved us months of headaches. Having our university branding front and center is a huge plus.&quot;
+                    </p>
+                    <div className="mt-4 border-t border-slate-100 pt-6">
+                      <div className="text-base font-bold text-[#001D2E]">Sarah Ndegwa</div>
+                      <div className="text-sm font-medium text-slate-500">Head of IT Infrastructure</div>
+                    </div>
+                  </div>
+
+                  {/* Testimonial 3 */}
+                  <div className="flex flex-col gap-4 bg-white p-8 rounded-[24px] shadow-[0_2px_10px_rgba(0,0,0,0.02)] border border-black/[0.03] shrink-0 w-[85vw] sm:w-[400px] lg:w-[450px]">
+                    <div className="text-[#8E1B73] shrink-0 bg-[#8E1B73]/5 p-4 rounded-full self-start">
+                      <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                    </div>
+                    <p className="text-[#001D2E] font-medium text-lg leading-relaxed flex-1">
+                      &quot;eduMEET has completely transformed how our researchers collaborate across borders. The security and performance are unmatched.&quot;
+                    </p>
+                    <div className="mt-4 border-t border-slate-100 pt-6">
+                      <div className="text-base font-bold text-[#001D2E]">Dr. Amina Diallo</div>
+                      <div className="text-sm font-medium text-slate-500">Director of Research, CADU</div>
+                    </div>
+                  </div>
+
+                  {/* Testimonial 4 */}
+                  <div className="flex flex-col gap-4 bg-white p-8 rounded-[24px] shadow-[0_2px_10px_rgba(0,0,0,0.02)] border border-black/[0.03] shrink-0 w-[85vw] sm:w-[400px] lg:w-[450px]">
+                    <div className="text-[#8E1B73] shrink-0 bg-[#8E1B73]/5 p-4 rounded-full self-start">
+                      <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                    </div>
+                    <p className="text-[#001D2E] font-medium text-lg leading-relaxed flex-1">
+                      &quot;Managing licenses used to be a nightmare. The pay-for-use model aligns perfectly with our academic calendar.&quot;
+                    </p>
+                    <div className="mt-4 border-t border-slate-100 pt-6">
+                      <div className="text-base font-bold text-[#001D2E]">Kwame Osei</div>
+                      <div className="text-sm font-medium text-slate-500">Chief Financial Officer, KNUST</div>
+                    </div>
+                  </div>
+
+                  {/* Testimonial 5 */}
+                  <div className="flex flex-col gap-4 bg-white p-8 rounded-[24px] shadow-[0_2px_10px_rgba(0,0,0,0.02)] border border-black/[0.03] shrink-0 w-[85vw] sm:w-[400px] lg:w-[450px]">
+                    <div className="text-[#8E1B73] shrink-0 bg-[#8E1B73]/5 p-4 rounded-full self-start">
+                      <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                    </div>
+                    <p className="text-[#001D2E] font-medium text-lg leading-relaxed flex-1">
+                      &quot;No more dropped calls during important international lectures. The open-source nature means absolute zero vendor lock-in.&quot;
+                    </p>
+                    <div className="mt-4 border-t border-slate-100 pt-6">
+                      <div className="text-base font-bold text-[#001D2E]">Professor Mensah</div>
+                      <div className="text-sm font-medium text-slate-500">WACREN IT</div>
+                    </div>
+                  </div>
+
                 </div>
               </div>
-
-              {/* Row 2 */}
-              {/* Wide White (Spans 2 cols) */}
-              <div className="bg-white p-8 rounded-2xl lg:col-span-2 flex flex-col justify-between shadow-[0_2px_10px_rgba(0,0,0,0.02)] border border-black/5">
-                <p className="text-[#001D2E] font-medium text-xl leading-relaxed mb-8">
-                  &quot;Managing licenses used to be a nightmare. The pay-for-use model aligns perfectly with our academic calendar, scaling up during term time and dropping during breaks.&quot;
-                </p>
-                <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-full bg-slate-200 overflow-hidden">
-                    <img src="https://i.pravatar.cc/100?img=11" alt="Avatar" className="w-full h-full object-cover" />
-                  </div>
-                  <div>
-                    <div className="text-sm font-bold text-[#001D2E]">Kwame Osei</div>
-                    <div className="text-xs font-medium text-slate-500">Chief Financial Officer, KNUST</div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Small Blue */}
-              <div className="bg-[#2A75C1] p-8 rounded-2xl flex flex-col justify-between shadow-[0_2px_10px_rgba(0,0,0,0.02)] border border-black/5">
-                <p className="text-white font-semibold text-lg mb-8 leading-snug">
-                  &quot;No more dropped calls during important international lectures.&quot;
-                </p>
-                <div className="text-sm font-bold text-white">Professor Mensah</div>
-              </div>
-
-              {/* Small Orange */}
-              <div className="bg-[#003B5C] p-8 rounded-2xl flex flex-col justify-between shadow-[0_2px_10px_rgba(0,0,0,0.02)] border border-black/5">
-                <p className="text-white font-semibold text-lg mb-8 leading-snug">
-                  &quot;Students love that they don&apos;t need to create new accounts to join.&quot;
-                </p>
-                <div className="text-sm font-bold text-white">Student Union</div>
-              </div>
-
-              {/* Row 3 */}
-              {/* Small Purple */}
-              <div className="bg-[#8E1B73] p-8 rounded-2xl flex flex-col justify-between shadow-[0_2px_10px_rgba(0,0,0,0.02)] border border-black/5">
-                <p className="text-white font-semibold text-lg mb-8 leading-snug">
-                  &quot;The open-source nature means absolute zero vendor lock-in.&quot;
-                </p>
-                <div className="text-sm font-bold text-white">IT Procurement</div>
-              </div>
-
-              {/* Small Blue */}
-              <div className="bg-[#F1921A] p-8 rounded-2xl flex flex-col justify-between shadow-[0_2px_10px_rgba(0,0,0,0.02)] border border-black/5">
-                <p className="text-white font-semibold text-lg mb-8 leading-snug">
-                  &quot;Having our university branding front and center is a huge plus.&quot;
-                </p>
-                <div className="text-sm font-bold text-white">Communications</div>
-              </div>
-
-              {/* Wide White (Spans 2 cols) */}
-              <div className="bg-white p-8 rounded-2xl lg:col-span-2 flex flex-col justify-between shadow-[0_2px_10px_rgba(0,0,0,0.02)] border border-black/5">
-                <p className="text-[#001D2E] font-medium text-xl leading-relaxed mb-8">
-                  &quot;We rolled out eduMEET to 40,000 students overnight. Because it utilizes the AfricaConnect4 backbone, the latency is incredibly low and video quality remains pristine.&quot;
-                </p>
-                <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-full bg-slate-200 overflow-hidden">
-                    <img src="https://i.pravatar.cc/100?img=33" alt="Avatar" className="w-full h-full object-cover" />
-                  </div>
-                  <div>
-                    <div className="text-sm font-bold text-[#001D2E]">Sarah Ndegwa</div>
-                    <div className="text-xs font-medium text-slate-500">Head of IT Infrastructure</div>
-                  </div>
-                </div>
-              </div>
-
             </div>
+
           </div>
         </section>
 
@@ -836,7 +761,7 @@ export default function Home() {
               Find out if your NREN has joined, or tell us you're interested.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center">
-              <Link href="#" className="group inline-flex items-center justify-center px-6 py-3 text-sm font-bold text-white transition-all bg-[#F1921A] hover:bg-[#D97D12] w-full sm:w-auto border border-transparent rounded-none shadow-none">
+              <Link href="/get-started" className="group inline-flex items-center justify-center px-6 py-3 text-sm font-bold text-white transition-all bg-[#F1921A] hover:bg-[#D97D12] w-full sm:w-auto border border-transparent rounded-none shadow-none">
                 Get eduMEET
               </Link>
               <Link href="#" className="group inline-flex items-center justify-center px-6 py-3 text-sm font-bold text-[#001D2E] transition-all bg-white hover:bg-slate-50 w-full sm:w-auto border border-slate-300 rounded-none shadow-none">

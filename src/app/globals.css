@@ -126,6 +126,10 @@
   animation: marquee 30s linear infinite;
 }
 
+.animate-marquee:hover, .group:hover .animate-marquee {
+  animation-play-state: paused;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

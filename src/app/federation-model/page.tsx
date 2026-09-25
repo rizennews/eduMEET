@@ -20,8 +20,8 @@ export default function FederationModelPage() {
               transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
               className="w-full"
             >
-              <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold tracking-tighter text-white mb-8 whitespace-nowrap">
-                Federation Model
+              <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold tracking-tighter text-white mb-8">
+                The federation model
               </h1>
             </motion.div>
 
@@ -37,7 +37,101 @@ export default function FederationModelPage() {
 
           </div>
         </section>
+        {/* WACREN SEEDING SECTION */}
+        <section className="w-full bg-white py-24 px-4 border-b border-slate-200">
+          <div className="max-w-7xl mx-auto flex flex-col">
+            
+            <div className="flex flex-col md:text-center max-w-3xl mx-auto mb-20">
+              <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-[#001D2E] mb-6">
+                WACREN is seeding the federation across West and Central Africa
+              </h2>
+              <p className="text-lg text-slate-500 font-normal leading-relaxed">
+                The service starts with coverage from day one, using servers already installed on WACREN&apos;s regional network.
+              </p>
+            </div>
 
+            {/* 3 Stats Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-[1px] bg-slate-200 border border-slate-200 mb-8">
+              
+              {/* Stat 1 */}
+              <div className="bg-white p-10 flex flex-col items-center text-center justify-center">
+                <div className="text-6xl font-bold text-[#8E1B73] tracking-tighter mb-4">12</div>
+                <h3 className="text-xl font-bold text-[#001D2E] tracking-tight mb-3">countries</h3>
+                <p className="text-slate-500 font-normal leading-relaxed text-sm max-w-xs">
+                  with backbone servers ready to carry meetings
+                </p>
+              </div>
+
+              {/* Stat 2 */}
+              <div className="bg-white p-10 flex flex-col items-center text-center justify-center">
+                <div className="text-6xl font-bold text-[#F1921A] tracking-tighter mb-4">AC4</div>
+                <h3 className="text-xl font-bold text-[#001D2E] tracking-tight mb-3">AfricaConnect4</h3>
+                <p className="text-slate-500 font-normal leading-relaxed text-sm max-w-xs">
+                  EU co-funded programme, 2025 to 2029
+                </p>
+              </div>
+
+              {/* Stat 3 */}
+              <div className="bg-white p-10 flex flex-col items-center text-center justify-center">
+                <div className="text-6xl font-bold text-[#2A75C1] tracking-tighter mb-4">Day 1</div>
+                <h3 className="text-xl font-bold text-[#001D2E] tracking-tight mb-3">coverage</h3>
+                <p className="text-slate-500 font-normal leading-relaxed text-sm max-w-xs">
+                  no waiting period for regional reach
+                </p>
+              </div>
+
+            </div>
+
+            {/* Logos (Hidden for now) */}
+            <div className="hidden relative w-full overflow-hidden pt-12 pb-12 border-y border-slate-100">
+              
+              <div className="text-center mb-16 relative z-20">
+                <h3 className="text-2xl md:text-3xl text-slate-600 tracking-tight" style={{ fontFamily: "Georgia, serif" }}>
+                  Empowering <i className="font-serif">Exceptional</i> Teams <i className="font-serif">Worldwide</i>
+                </h3>
+              </div>
+
+              {/* Gradient masks for fading edges like the screenshot */}
+              <div className="absolute inset-y-0 left-0 w-24 md:w-64 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
+              <div className="absolute inset-y-0 right-0 w-24 md:w-64 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
+              
+              <div className="flex w-max animate-marquee hover:[animation-play-state:paused]">
+                {/* First set of logos */}
+                <div className="flex items-center justify-center gap-12 md:gap-24 flex-nowrap px-6 md:px-12">
+                  <img src="/wacren.svg" alt="WACREN" className="h-10 md:h-14 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" />
+                  <img src="/africaconnect4.png" alt="AfricaConnect4" className="h-10 md:h-14 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" />
+                  <img src="/EU-logo.png" alt="EU" className="h-10 md:h-14 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" />
+                  
+                  <div className="flex items-center gap-2 grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100">
+                    <img src="/GEANT-icon.svg" alt="GEANT" className="h-10 md:h-14 w-auto object-contain" />
+                    <img src="/GEANT-text.svg" alt="GEANT Text" className="h-5 md:h-7 w-auto object-contain" />
+                  </div>
+                  
+                  <img src="/PCSS.jpg" alt="PCSS" className="h-10 md:h-14 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100 mix-blend-multiply" />
+                  <img src="/edul.africa.png" alt="eduID.africa" className="h-8 md:h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" />
+                  <img src="/BonafID-Logo.png" alt="BonafID" className="h-8 md:h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" />
+                </div>
+                
+                {/* Duplicate set for seamless looping */}
+                <div className="flex items-center justify-center gap-12 md:gap-24 flex-nowrap px-6 md:px-12">
+                  <img src="/wacren.svg" alt="WACREN" className="h-10 md:h-14 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" />
+                  <img src="/africaconnect4.png" alt="AfricaConnect4" className="h-10 md:h-14 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" />
+                  <img src="/EU-logo.png" alt="EU" className="h-10 md:h-14 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" />
+                  
+                  <div className="flex items-center gap-2 grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100">
+                    <img src="/GEANT-icon.svg" alt="GEANT" className="h-10 md:h-14 w-auto object-contain" />
+                    <img src="/GEANT-text.svg" alt="GEANT Text" className="h-5 md:h-7 w-auto object-contain" />
+                  </div>
+                  
+                  <img src="/PCSS.jpg" alt="PCSS" className="h-10 md:h-14 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100 mix-blend-multiply" />
+                  <img src="/edul.africa.png" alt="eduID.africa" className="h-8 md:h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" />
+                  <img src="/BonafID-Logo.png" alt="BonafID" className="h-8 md:h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" />
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
         {/* ARCHITECTURE SECTION */}
         <section className="w-full bg-slate-50 py-20 md:py-32 px-4">
           <div className="max-w-[1200px] mx-auto flex flex-col lg:flex-row gap-16 items-center">

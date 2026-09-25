@@ -80,11 +80,12 @@ export function Navigation() {
           <div className="flex items-center gap-1">
             {/* Action Button */}
             <div className="flex items-center pl-2">
-              <Button 
-                className="rounded-full bg-[#8E1B73] font-semibold text-white hover:bg-[#8E1B73]/90 shadow-sm px-4 md:px-6 text-sm md:text-base h-9 md:h-10"
+              <Link 
+                href="/get-started"
+                className="inline-flex items-center justify-center rounded-full bg-[#8E1B73] font-semibold text-white hover:bg-[#72155c] transition-colors shadow-sm px-4 md:px-6 text-sm md:text-base h-9 md:h-10 border border-transparent"
               >
                 Get eduMEET
-              </Button>
+              </Link>
             </div>
 
             {/* Mobile Menu Toggle */}
