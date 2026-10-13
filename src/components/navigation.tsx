@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +14,14 @@ export function Navigation() {
           
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 px-2" onClick={() => setIsOpen(false)}>
-            <img src="/logo.png" alt="eduMEET Logo" className="h-8 w-auto object-contain" />
+            <Image 
+              src="/logo.png" 
+              alt="eduMEET Logo" 
+              width={128} 
+              height={32} 
+              priority
+              className="h-8 w-auto object-contain" 
+            />
           </Link>
 
           {/* Desktop Menu */}

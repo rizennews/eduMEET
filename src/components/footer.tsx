@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 export function Footer() {
   return (
@@ -14,7 +15,13 @@ export function Footer() {
           <div className="lg:col-span-4 flex flex-col items-start gap-8">
             <Link href="/" className="inline-block">
               {/* Unfiltered logo displaying original brand colors on dark blue */}
-              <img src="/logo.png" alt="eduMEET Logo" className="h-10 w-auto object-contain hover:opacity-90 transition-opacity" />
+              <Image 
+                src="/logo.png" 
+                alt="eduMEET Logo" 
+                width={160} 
+                height={40} 
+                className="h-10 w-auto object-contain hover:opacity-90 transition-opacity" 
+              />
             </Link>
             
             <p className="text-white/90 text-lg font-medium leading-relaxed max-w-sm">
@@ -121,11 +128,23 @@ export function Footer() {
       {/* Far Bottom: Giant Typography and Sticker */}
       <div className="relative w-full overflow-hidden mt-12 flex flex-col justify-center items-center">
         
-        {/* EU/WACREN Sticker */}
-        <div className="z-10 w-[90%] max-w-[320px] sm:max-w-[280px] md:max-w-[250px] bg-[#8E1B73] text-white p-4 rounded-xl shadow-xl border border-white/10 mb-6 md:mb-0 md:absolute md:bottom-8 md:right-8 lg:right-16 md:rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-300">
-          <div className="flex items-center gap-3 mb-2.5">
-            <img src="/EU-logo.png" alt="EU Flag" className="h-5 w-auto object-contain" />
-            <img src="/wacren.svg" alt="WACREN" className="h-5 w-auto object-contain" />
+        {/* EU/WACREN "Sticker" matching the B-Corp sticker placement */}
+        <div className="relative md:absolute z-10 md:bottom-[15%] md:right-[8%] lg:right-[12%] xl:right-[15%] w-full max-w-[280px] md:max-w-[240px] bg-[#8E1B73] text-white p-4 rounded-xl shadow-xl transform md:rotate-3 hover:rotate-0 hover:scale-105 transition-all duration-300 border border-white/10 mb-8 md:mb-0 mx-auto md:mx-0">
+          <div className="flex items-center gap-3 mb-3">
+            <Image 
+              src="/EU-logo.png" 
+              alt="EU Flag" 
+              width={32} 
+              height={20} 
+              className="h-5 w-auto object-contain" 
+            />
+            <Image 
+              src="/wacren.svg" 
+              alt="WACREN" 
+              width={64} 
+              height={20} 
+              className="h-5 w-auto object-contain" 
+            />
           </div>
           <p className="text-[11px] leading-relaxed text-white/90 font-medium">
             An initiative of <a href="https://wacren.net/" target="_blank" rel="noopener noreferrer" className="font-bold underline underline-offset-2 hover:text-white/70 transition-colors">WACREN</a>. Powered by <a href="https://edumeet.eu/" target="_blank" rel="noopener noreferrer" className="font-bold underline underline-offset-2 hover:text-white/70 transition-colors">eduMEET open-source software</a> and funded by the European Commission under the AfricaConnect4 project.
@@ -133,7 +152,7 @@ export function Footer() {
         </div>
 
         {/* Giant Text */}
-        <div className="w-full text-[18vw] md:text-[16vw] font-bold leading-[0.75] tracking-tighter text-white/5 select-none pointer-events-none mt-4 md:mt-6 mb-0 text-center">
+        <div className="w-full text-[20vw] md:text-[17vw] font-bold leading-[0.75] tracking-tighter text-white/5 select-none pointer-events-none mt-4 md:mt-8 mb-0 md:-mb-2 text-center">
           eduMEET
         </div>
 
