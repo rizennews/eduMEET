@@ -2,7 +2,6 @@
 
 import { PageTransition } from "@/components/page-transition";
 import { motion } from "framer-motion";
-import Link from "next/link";
 
 export default function ParticipationPage() {
   return (
@@ -21,7 +20,7 @@ export default function ParticipationPage() {
               transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
               className="w-full"
             >
-              <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold tracking-tighter text-white mb-8">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tighter text-white mb-8 text-balance">
                 Contribute infrastructure
               </h1>
             </motion.div>
@@ -32,15 +31,15 @@ export default function ParticipationPage() {
         </section>
 
         {/* PLACEHOLDER UI GRID (For consistency) */}
-        <section className="w-full bg-slate-50 py-20 md:py-32 px-4 border-t border-slate-200">
+        <section className="w-full bg-slate-50 py-14 md:py-20 px-4 border-t border-slate-200">
           <div className="max-w-[1200px] mx-auto flex flex-col">
             
-            <div className="mb-16 text-center flex flex-col items-center">
-              <div className="text-sm font-bold tracking-wider uppercase text-[#8E1B73] mb-4 flex items-center justify-center gap-2">
+            <div className="mb-10 text-center flex flex-col items-center">
+              <div className="text-sm font-bold tracking-wider uppercase text-[#8E1B73] mb-3 flex items-center justify-center gap-2">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
                 Capacity
               </div>
-              <h2 className="text-3xl md:text-5xl font-bold text-[#001D2E] mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#001D2E] mb-4">
                 Why contribute nodes?
               </h2>
             </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { PageTransition } from "@/components/page-transition";
+import { BlurPlaceholder } from "@/components/blur-placeholder";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
@@ -20,7 +21,7 @@ export default function ResearchersPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
             >
-              <h1 className="text-5xl md:text-6xl xl:text-7x2 font-bold tracking-tighter text-white mb-8 text-balance">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tighter text-white mb-8 text-balance">
                 Collaborate across borders on trusted infrastructure
               </h1>
             </motion.div>
@@ -29,12 +30,12 @@ export default function ResearchersPage() {
         </section>
 
         {/* USE CASES SECTION */}
-        <section className="w-full bg-[#f8fafc] py-24 md:py-32 px-4 border-t border-black/5">
+        <section className="w-full bg-[#f8fafc] py-16 md:py-20 px-4 border-t border-black/5">
           <div className="max-w-[1200px] mx-auto flex flex-col items-center">
             
             {/* Header */}
-            <div className="text-center mb-16 md:mb-20">
-              <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-[#001D2E]">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#001D2E]">
                 Built for how research teams work
               </h2>
             </div>
@@ -44,7 +45,14 @@ export default function ResearchersPage() {
               <div className="grid grid-cols-1 md:grid-cols-2">
                 
                 {/* Item 1 */}
-                <div className="flex flex-col p-8 md:p-10 lg:p-12 border-r border-b border-slate-200 h-full">
+                <div className="flex flex-col p-6 md:p-8 border-r border-b border-slate-200 h-full">
+                  <BlurPlaceholder 
+                    aspectRatio="video"
+                    category="Multi-Institution"
+                    label="Inter-University Consortium Session"
+                    theme="blue"
+                    className="mb-4"
+                  />
                   <div className="text-xs font-bold tracking-wider uppercase text-[#2A75C1] mb-3">Up to 100 people</div>
                   <h3 className="text-xl md:text-2xl font-bold text-[#001D2E] mb-4">Consortium meetings</h3>
                   <p className="text-slate-500 leading-relaxed font-medium">
@@ -54,6 +62,13 @@ export default function ResearchersPage() {
 
                 {/* Item 2 */}
                 <div className="flex flex-col p-8 md:p-10 lg:p-12 border-r border-b border-slate-200 h-full">
+                  <BlurPlaceholder 
+                    aspectRatio="video"
+                    category="Academic Dissemination"
+                    label="Departmental Research Colloquium"
+                    theme="orange"
+                    className="mb-6"
+                  />
                   <div className="text-xs font-bold tracking-wider uppercase text-[#F1921A] mb-3">Up to 300 people</div>
                   <h3 className="text-xl md:text-2xl font-bold text-[#001D2E] mb-4">Research seminars</h3>
                   <p className="text-slate-500 leading-relaxed font-medium">
@@ -63,6 +78,13 @@ export default function ResearchersPage() {
 
                 {/* Item 3 */}
                 <div className="flex flex-col p-8 md:p-10 lg:p-12 border-r border-b border-slate-200 h-full">
+                  <BlurPlaceholder 
+                    aspectRatio="video"
+                    category="Continental Scale"
+                    label="Symposium & Keynote Auditorium"
+                    theme="purple"
+                    className="mb-6"
+                  />
                   <div className="text-xs font-bold tracking-wider uppercase text-[#8E1B73] mb-3">Up to 1,000 people</div>
                   <h3 className="text-xl md:text-2xl font-bold text-[#001D2E] mb-4">Conferences and webinars</h3>
                   <p className="text-slate-500 leading-relaxed font-medium">
@@ -72,6 +94,13 @@ export default function ResearchersPage() {
 
                 {/* Item 4 */}
                 <div className="flex flex-col p-8 md:p-10 lg:p-12 border-r border-b border-slate-200 h-full">
+                  <BlurPlaceholder 
+                    aspectRatio="video"
+                    category="Cross-Border Mentorship"
+                    label="Doctoral Supervision Room"
+                    theme="neutral"
+                    className="mb-6"
+                  />
                   <div className="text-xs font-bold tracking-wider uppercase text-[#003B5C] mb-3">Small groups</div>
                   <h3 className="text-xl md:text-2xl font-bold text-[#001D2E] mb-4">Supervision at a distance</h3>
                   <p className="text-slate-500 leading-relaxed font-medium">
@@ -86,12 +115,12 @@ export default function ResearchersPage() {
         </section>
 
         {/* WHY IT MATTERS SECTION (Solid Color Grid) */}
-        <section className="w-full bg-white py-24 md:py-32 px-4 border-t border-slate-200">
+        <section className="w-full bg-white py-14 md:py-20 px-4 border-t border-slate-200">
           <div className="max-w-[1200px] mx-auto flex flex-col items-center">
             
             {/* Header */}
-            <div className="text-center mb-16 md:mb-20">
-              <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-[#001D2E]">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#001D2E]">
                 Why it matters for research
               </h2>
             </div>
@@ -136,9 +165,9 @@ export default function ResearchersPage() {
         </section>
 
         {/* FINAL CTA SECTION */}
-        <section className="w-full bg-slate-50 py-24 px-4 border-t border-slate-200">
+        <section className="w-full bg-slate-50 py-14 md:py-20 px-4 border-t border-slate-200">
           <div className="max-w-[800px] mx-auto flex flex-col items-center text-center">
-            <h2 className="text-3xl font-serif text-[#001D2E] mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#001D2E] mb-4">
               Planning a research event?
             </h2>
             <p className="text-base text-slate-600 mb-10 max-w-xl">

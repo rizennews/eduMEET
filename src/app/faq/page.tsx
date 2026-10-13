@@ -110,12 +110,7 @@ export default function FAQPage() {
     }
   };
 
-  const scrollToSection = (id: string) => {
-    const el = document.getElementById(id);
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+
 
   return (
     <PageTransition>
@@ -130,7 +125,7 @@ export default function FAQPage() {
               transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
               className="w-full"
             >
-              <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold tracking-tighter text-white">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tighter text-white text-balance">
                 Frequently asked questions
               </h1>
             </motion.div>
@@ -138,8 +133,8 @@ export default function FAQPage() {
         </section>
 
         {/* FAQ SECTIONS */}
-        <section className="w-full py-16 md:py-24 px-4">
-          <div className="max-w-[800px] mx-auto flex flex-col gap-16">
+        <section className="w-full py-14 md:py-20 px-4">
+          <div className="max-w-[800px] mx-auto flex flex-col gap-10 md:gap-14">
             
             {/* USING EDUMEET */}
             <div id="using" className="w-full flex flex-col">
@@ -251,13 +246,13 @@ export default function FAQPage() {
         </section>
 
         {/* FINAL CTA SECTION */}
-        <section className="w-full bg-slate-50 py-24 px-4 border-t border-slate-200">
+        <section className="w-full bg-slate-50 py-14 md:py-20 px-4 border-t border-slate-200">
           <div className="max-w-[800px] mx-auto flex flex-col items-center text-center">
-            <h2 className="text-3xl font-serif text-[#001D2E] mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#001D2E] mb-4">
               Still have questions?
             </h2>
-            <p className="text-base text-slate-600 mb-10 max-w-xl">
-              Tell us about your organisation and what you're considering. We'll find the right path.
+            <p className="text-base text-slate-600 mb-8 max-w-xl">
+              Tell us about your organisation and what you&apos;re considering. We&apos;ll find the right path.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center">
               <Link href="#" className="group inline-flex items-center justify-center px-6 py-3 text-sm font-bold text-white transition-all bg-[#F1921A] hover:bg-[#D97D12] w-full sm:w-auto border border-transparent rounded-none shadow-none">

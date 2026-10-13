@@ -1,6 +1,7 @@
 "use client";
 
 import { PageTransition } from "@/components/page-transition";
+import { BlurPlaceholder } from "@/components/blur-placeholder";
 import { motion } from "framer-motion";
 
 export default function LeadershipPage() {
@@ -19,7 +20,7 @@ export default function LeadershipPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
             >
-              <h1 className="text-5xl md:text-6xl xl:text-7x2 font-bold tracking-tighter text-white mb-8 text-balance">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tighter text-white mb-8 text-balance">
                 A video platform your university controls
               </h1>
             </motion.div>
@@ -48,13 +49,14 @@ export default function LeadershipPage() {
                 </p>
               </div>
 
-              {/* Image Content */}
-              <div className="relative h-[300px] lg:h-auto min-h-[300px] bg-slate-100 overflow-hidden border border-slate-200 lg:border-none">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img 
-                  src="/business-meeting-with-team-via-video-call-2026-03-09-02-54-58-utc.jpg" 
-                  alt="Business meeting via video call" 
-                  className="absolute inset-0 w-full h-full object-cover"
+              {/* Image Content replaced with modern blur placeholder */}
+              <div className="relative h-[320px] lg:h-auto min-h-[320px] overflow-hidden border border-slate-200 lg:border-none p-4 sm:p-6 flex items-center justify-center bg-slate-50/50">
+                <BlurPlaceholder 
+                  aspectRatio="auto"
+                  category="Institutional Infrastructure"
+                  label="Campus Strategic Overview & Video Architecture"
+                  theme="blue"
+                  className="w-full h-full min-h-[260px] shadow-sm"
                 />
               </div>
 

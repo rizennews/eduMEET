@@ -20,7 +20,7 @@ export default function NRENsPage() {
               transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
               className="w-full"
             >
-              <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold tracking-tighter text-white mb-8">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tighter text-white mb-8 text-balance">
                 Sovereign video infrastructure
               </h1>
             </motion.div>
@@ -58,15 +58,15 @@ export default function NRENsPage() {
         </section>
 
         {/* WACREN SEEDING STATS SECTION */}
-        <section className="w-full bg-white py-16 md:py-24 px-4 border-t border-slate-200">
+        <section className="w-full bg-white py-14 md:py-20 px-4 border-t border-slate-200">
           <div className="max-w-[1000px] mx-auto flex flex-col items-center">
             
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#001D2E] mb-6 text-balance">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#001D2E] mb-4 text-balance">
                 WACREN is seeding the federation across West and Central Africa
               </h2>
-              <p className="text-lg text-slate-500 font-medium max-w-2xl mx-auto text-balance">
-                The service starts with coverage from day one, using servers already installed on WACREN's regional network.
+              <p className="text-base md:text-lg text-slate-500 font-medium max-w-2xl mx-auto text-balance">
+                The service starts with coverage from day one, using servers already installed on WACREN&apos;s regional network.
               </p>
             </div>
 
@@ -105,7 +105,7 @@ export default function NRENsPage() {
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-5xl font-bold text-[#001D2E] mb-6">Two ways to join</h2>
               <p className="text-lg text-slate-500 font-medium max-w-2xl mx-auto">
-                Select the path that best fits your institution's technical resources and budget.
+                Select the path that best fits your institution&apos;s technical resources and budget.
               </p>
             </div>
 
@@ -167,10 +167,10 @@ export default function NRENsPage() {
         </section>
 
         {/* RESOURCES GRID: EVERYTHING YOU NEED */}
-        <section className="w-full bg-white py-20 md:py-32 px-4 border-t border-slate-200">
+        <section className="w-full bg-white py-14 md:py-20 px-4 border-t border-slate-200">
           <div className="max-w-[1200px] mx-auto flex flex-col items-center">
             
-            <h2 className="text-3xl md:text-5xl font-bold text-[#001D2E] mb-16 text-center">Everything you need</h2>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#001D2E] mb-10 text-center">Everything you need</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-3 w-full bg-white border border-slate-200 divide-y md:divide-y-0 md:divide-x divide-slate-200">
               
@@ -228,7 +228,7 @@ export default function NRENsPage() {
         </section>
 
         {/* FINAL CTA: OUTREACH KIT */}
-        <section className="w-full bg-[#003B5C] py-24 md:py-32 px-4">
+        <section className="w-full bg-[#003B5C] py-14 md:py-20 px-4">
           <div className="max-w-[800px] mx-auto flex flex-col items-center text-center">
             
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 text-balance">

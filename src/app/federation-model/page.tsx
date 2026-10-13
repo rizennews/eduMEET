@@ -1,7 +1,9 @@
 "use client";
 
 import { PageTransition } from "@/components/page-transition";
+import { BlurPlaceholder } from "@/components/blur-placeholder";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function FederationModelPage() {
   return (
@@ -20,7 +22,7 @@ export default function FederationModelPage() {
               transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
               className="w-full"
             >
-              <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold tracking-tighter text-white mb-8">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tighter text-white mb-8 text-balance">
                 The federation model
               </h1>
             </motion.div>
@@ -89,34 +91,34 @@ export default function FederationModelPage() {
               <div className="flex w-max animate-marquee hover:[animation-play-state:paused]">
                 {/* First set of logos */}
                 <div className="flex items-center justify-center gap-12 md:gap-24 flex-nowrap px-6 md:px-12">
-                  <img src="/wacren.svg" alt="WACREN" className="h-10 md:h-14 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" />
-                  <img src="/africaconnect4.png" alt="AfricaConnect4" className="h-10 md:h-14 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" />
-                  <img src="/EU-logo.png" alt="EU" className="h-10 md:h-14 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" />
+                  <Image src="/wacren.svg" alt="WACREN" width={120} height={48} className="h-10 md:h-14 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" />
+                  <Image src="/africaconnect4.png" alt="AfricaConnect4" width={120} height={48} className="h-10 md:h-14 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" />
+                  <Image src="/EU-logo.png" alt="EU" width={120} height={48} className="h-10 md:h-14 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" />
                   
                   <div className="flex items-center gap-2 grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100">
-                    <img src="/GEANT-icon.svg" alt="GEANT" className="h-10 md:h-14 w-auto object-contain" />
-                    <img src="/GEANT-text.svg" alt="GEANT Text" className="h-5 md:h-7 w-auto object-contain" />
+                    <Image src="/GEANT-icon.svg" alt="GEANT" width={48} height={48} className="h-10 md:h-14 w-auto object-contain" />
+                    <Image src="/GEANT-text.svg" alt="GEANT Text" width={80} height={28} className="h-5 md:h-7 w-auto object-contain" />
                   </div>
                   
-                  <img src="/PCSS.jpg" alt="PCSS" className="h-10 md:h-14 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100 mix-blend-multiply" />
-                  <img src="/edul.africa.png" alt="eduID.africa" className="h-8 md:h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" />
-                  <img src="/BonafID-Logo.png" alt="BonafID" className="h-8 md:h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" />
+                  <Image src="/PCSS.jpg" alt="PCSS" width={120} height={48} className="h-10 md:h-14 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100 mix-blend-multiply" />
+                  <Image src="/edul.africa.png" alt="eduID.africa" width={100} height={40} className="h-8 md:h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" />
+                  <Image src="/BonafID-Logo.png" alt="BonafID" width={100} height={40} className="h-8 md:h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" />
                 </div>
                 
                 {/* Duplicate set for seamless looping */}
                 <div className="flex items-center justify-center gap-12 md:gap-24 flex-nowrap px-6 md:px-12">
-                  <img src="/wacren.svg" alt="WACREN" className="h-10 md:h-14 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" />
-                  <img src="/africaconnect4.png" alt="AfricaConnect4" className="h-10 md:h-14 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" />
-                  <img src="/EU-logo.png" alt="EU" className="h-10 md:h-14 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" />
+                  <Image src="/wacren.svg" alt="WACREN" width={120} height={48} className="h-10 md:h-14 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" />
+                  <Image src="/africaconnect4.png" alt="AfricaConnect4" width={120} height={48} className="h-10 md:h-14 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" />
+                  <Image src="/EU-logo.png" alt="EU" width={120} height={48} className="h-10 md:h-14 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" />
                   
                   <div className="flex items-center gap-2 grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100">
-                    <img src="/GEANT-icon.svg" alt="GEANT" className="h-10 md:h-14 w-auto object-contain" />
-                    <img src="/GEANT-text.svg" alt="GEANT Text" className="h-5 md:h-7 w-auto object-contain" />
+                    <Image src="/GEANT-icon.svg" alt="GEANT" width={48} height={48} className="h-10 md:h-14 w-auto object-contain" />
+                    <Image src="/GEANT-text.svg" alt="GEANT Text" width={80} height={28} className="h-5 md:h-7 w-auto object-contain" />
                   </div>
                   
-                  <img src="/PCSS.jpg" alt="PCSS" className="h-10 md:h-14 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100 mix-blend-multiply" />
-                  <img src="/edul.africa.png" alt="eduID.africa" className="h-8 md:h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" />
-                  <img src="/BonafID-Logo.png" alt="BonafID" className="h-8 md:h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" />
+                  <Image src="/PCSS.jpg" alt="PCSS" width={120} height={48} className="h-10 md:h-14 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100 mix-blend-multiply" />
+                  <Image src="/edul.africa.png" alt="eduID.africa" width={100} height={40} className="h-8 md:h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" />
+                  <Image src="/BonafID-Logo.png" alt="BonafID" width={100} height={40} className="h-8 md:h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100" />
                 </div>
               </div>
             </div>
@@ -124,16 +126,18 @@ export default function FederationModelPage() {
           </div>
         </section>
         {/* ARCHITECTURE SECTION */}
-        <section className="w-full bg-slate-50 py-20 md:py-32 px-4">
-          <div className="max-w-[1200px] mx-auto flex flex-col lg:flex-row gap-16 items-center">
+        <section className="w-full bg-slate-50 py-16 md:py-20 px-4">
+          <div className="max-w-[1200px] mx-auto flex flex-col lg:flex-row gap-10 items-center">
             
-            {/* Left: Graphic Placeholder */}
+            {/* Left: Modern Frosted Blur Architecture Canvas */}
             <div className="w-full lg:w-1/2">
-              <div className="w-full aspect-[4/3] bg-white border border-slate-200 flex flex-col items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-[radial-gradient(#e2e8f0_1px,transparent_1px)] [background-size:16px_16px] opacity-50"></div>
-                <svg className="w-16 h-16 text-[#003B5C] mb-4 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
-                <span className="text-sm font-bold text-slate-400 uppercase tracking-widest relative z-10">Architecture Diagram</span>
-              </div>
+              <BlurPlaceholder 
+                aspectRatio="video"
+                category="Topology & Routing"
+                label="Decentralized Media Node & Orchestrator Mesh"
+                theme="blue"
+                className="w-full shadow-lg"
+              />
             </div>
 
             {/* Right: Content */}
@@ -169,18 +173,18 @@ export default function FederationModelPage() {
         </section>
 
         {/* GOVERNANCE SECTION */}
-        <section className="w-full bg-white py-20 md:py-32 px-4 border-t border-slate-200">
+        <section className="w-full bg-white py-14 md:py-20 px-4 border-t border-slate-200">
           <div className="max-w-[1200px] mx-auto flex flex-col">
             
-            <div className="mb-16 text-center flex flex-col items-center">
-              <div className="text-sm font-bold tracking-wider uppercase text-[#8E1B73] mb-4 flex items-center justify-center gap-2">
+            <div className="mb-10 text-center flex flex-col items-center">
+              <div className="text-sm font-bold tracking-wider uppercase text-[#8E1B73] mb-3 flex items-center justify-center gap-2">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
                 Governance
               </div>
-              <h2 className="text-3xl md:text-5xl font-bold text-[#001D2E] mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#001D2E] mb-4">
                 Roles & Responsibilities
               </h2>
-              <p className="text-lg text-slate-600 font-medium max-w-2xl mx-auto leading-relaxed">
+              <p className="text-base md:text-lg text-slate-600 font-medium max-w-2xl mx-auto leading-relaxed">
                 Clear governance ensures the stability and scalability of the federation across the continent.
               </p>
             </div>

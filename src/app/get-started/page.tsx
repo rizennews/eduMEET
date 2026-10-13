@@ -75,15 +75,15 @@ function CountryChecker() {
           id="country-select"
           value={selectedCountry}
           onChange={(e) => setSelectedCountry(e.target.value)}
-          className="w-full bg-transparent border-b border-white/20 text-white pb-6 appearance-none rounded-none focus:outline-none focus:border-white transition-colors cursor-pointer text-3xl md:text-5xl lg:text-6xl font-serif tracking-tight"
+          className="w-full bg-transparent border-b border-white/20 text-white pb-4 sm:pb-6 pr-10 appearance-none rounded-none focus:outline-none focus:border-white transition-colors cursor-pointer text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight truncate"
         >
           <option value="" disabled className="text-slate-800">Choose a country...</option>
           {COUNTRIES.map(c => (
-            <option key={c.id} value={c.id} className="text-slate-800 bg-white text-lg font-sans">{c.name}</option>
+            <option key={c.id} value={c.id} className="text-slate-800 bg-white text-base sm:text-lg font-sans">{c.name}</option>
           ))}
         </select>
-        <div className="absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none text-white/30 pb-6">
-          <svg className="w-8 h-8 md:w-12 md:h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" /></svg>
+        <div className="absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none text-white/30 pb-4 sm:pb-6">
+          <svg className="w-6 h-6 sm:w-8 sm:h-8 md:w-12 md:h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" /></svg>
         </div>
       </div>
 
@@ -93,11 +93,11 @@ function CountryChecker() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             key={countryData.id}
-            className="pt-12 flex flex-col md:flex-row justify-between items-start gap-12"
+            className="pt-8 sm:pt-12 flex flex-col md:flex-row justify-between items-start gap-8 md:gap-12"
           >
             <div>
-              <div className="text-sm font-medium tracking-widest uppercase text-white/40 mb-4">National Network</div>
-              <div className="text-6xl md:text-8xl font-serif text-white tracking-tighter leading-none">{countryData.nren}</div>
+              <div className="text-xs sm:text-sm font-medium tracking-widest uppercase text-white/40 mb-2 sm:mb-4">National Network</div>
+              <div className="text-4xl sm:text-6xl md:text-8xl font-bold text-white tracking-tighter leading-none break-all">{countryData.nren}</div>
             </div>
             
             <div className="flex flex-col items-start md:items-end md:text-right">
@@ -111,7 +111,7 @@ function CountryChecker() {
                 </div>
               ) : (
                 <>
-                  <div className="text-2xl md:text-4xl font-serif text-white/60 mb-6 tracking-tight">Not connected</div>
+                  <div className="text-2xl md:text-4xl font-bold text-white/60 mb-6 tracking-tight">Not connected</div>
                   <p className="text-white/40 text-base md:text-lg leading-relaxed max-w-sm">
                     {countryData.nren !== 'N/A' 
                       ? `Ask your university IT office to contact ${countryData.nren} about joining eduMEET.`
@@ -142,7 +142,7 @@ export default function GetStartedPage() {
               transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
               className="w-full"
             >
-              <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold tracking-tighter text-white mb-6">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tighter text-white mb-6 text-balance">
                 Get eduMEET
               </h1>
               <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto text-balance font-medium">
@@ -223,13 +223,13 @@ export default function GetStartedPage() {
         </section>
 
         {/* COUNTRY CHECKER SECTION */}
-        <section className="w-full bg-[#001D2E] py-24 px-4 border-t border-[#002840]">
+        <section className="w-full bg-[#001D2E] py-14 md:py-20 px-4 border-t border-[#002840]">
           <div className="max-w-[800px] mx-auto flex flex-col items-center text-center">
             
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-white mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white mb-4">
               Is your country connected?
             </h2>
-            <p className="text-base md:text-lg text-white/80 mb-12 max-w-2xl leading-relaxed">
+            <p className="text-base md:text-lg text-white/80 mb-8 max-w-2xl leading-relaxed">
               Choose your country to see your NREN and its federation status.
             </p>
 
@@ -240,15 +240,15 @@ export default function GetStartedPage() {
         </section>
 
         {/* FINAL SECTION: EMAIL TEMPLATE */}
-        <section className="w-full bg-slate-50 py-24 px-4 border-t border-slate-200">
+        <section className="w-full bg-slate-50 py-14 md:py-20 px-4 border-t border-slate-200">
           <div className="max-w-[800px] mx-auto flex flex-col items-center">
             
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-serif text-[#001D2E] mb-4">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#001D2E] mb-3">
                 Ask your IT office
               </h2>
               <p className="text-base md:text-lg text-slate-600 max-w-xl mx-auto">
-                Copy this message and send it to your university's IT help desk.
+                Copy this message and send it to your university&apos;s IT help desk.
               </p>
             </div>
 
@@ -265,7 +265,7 @@ export default function GetStartedPage() {
                 </div>
                 <div className="text-slate-700 leading-relaxed space-y-4 whitespace-pre-wrap font-medium">
                   <p>Hello,</p>
-                  <p>I'd like to use eduMEET, the video conferencing service for African research and education run by WACREN, for my classes and research meetings.</p>
+                  <p>I&apos;d like to use eduMEET, the video conferencing service for African research and education run by WACREN, for my classes and research meetings.</p>
                   <p>Could you check whether our NREN has joined the African eduMEET Federation, and whether our university can be connected?</p>
                   <p>More information: <a href="https://edumeet.africa" className="text-[#2A75C1] hover:underline font-bold">https://edumeet.africa</a></p>
                   <p>Thank you,<br/>[Your name, department]</p>

@@ -26,7 +26,7 @@ export default function NotFound() {
 
         {/* Description */}
         <p className="text-lg md:text-xl text-slate-600 font-medium mb-12 leading-relaxed px-4">
-          The link you followed may be broken, or the page may have been moved. Let's get you back to the right place.
+          The link you followed may be broken, or the page may have been moved. Let&apos;s get you back to the right place.
         </p>
 
         {/* Action Buttons */}

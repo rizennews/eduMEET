@@ -1,7 +1,7 @@
 "use client";
 
-import Link from "next/link";
 import { PageTransition } from "@/components/page-transition";
+import { BlurPlaceholder } from "@/components/blur-placeholder";
 import { motion } from "framer-motion";
 
 export default function WhatIsEdumeet() {
@@ -20,7 +20,7 @@ export default function WhatIsEdumeet() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
             >
-              <h1 className="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tighter text-white mb-8">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tighter text-white mb-8 text-balance">
                 What is eduMEET
               </h1>
             </motion.div>
@@ -29,7 +29,7 @@ export default function WhatIsEdumeet() {
         </section>
 
         {/* EXPLANATION SECTION */}
-        <section className="w-full bg-white py-24 md:py-32 px-4 overflow-hidden">
+        <section className="w-full bg-white py-14 md:py-20 px-4 overflow-hidden">
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             
             {/* Left Column: Text */}
@@ -40,13 +40,16 @@ export default function WhatIsEdumeet() {
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
               className="flex flex-col space-y-6"
             >
-              <p className="text-xl md:text-2xl lg:text-[1.75rem] text-[#001D2E] leading-relaxed font-semibold tracking-tight text-balance mb-2">
-                eduMEET is an open-source video conferencing service designed by and for the research and education community. In Africa, WACREN runs it as the African eduMEET Federation, so universities can meet, teach and collaborate on infrastructure they trust.
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-[#001D2E] leading-tight">
+                An open-source platform designed for research and education
+              </h2>
+              <p className="text-lg md:text-xl text-slate-700 leading-relaxed font-medium">
+                In Africa, WACREN runs it as the African eduMEET Federation, so universities can meet, teach and collaborate on infrastructure they trust.
               </p>
-              <p className="text-lg md:text-xl text-slate-600 leading-relaxed max-w-xl mb-2">
+              <p className="text-base md:text-lg text-slate-500 leading-relaxed font-normal">
                 You click a link, sign in with your university account and you&apos;re in a meeting. Behind the scenes, the video travels over research and education networks instead of a commercial company&apos;s servers.
               </p>
-              <p className="text-lg md:text-xl text-slate-600 leading-relaxed max-w-xl">
+              <p className="text-base md:text-lg text-slate-500 leading-relaxed font-normal">
                 That means your university sets the rules, pays for what it actually uses and keeps its own name on the service.
               </p>
             </motion.div>
@@ -71,12 +74,12 @@ export default function WhatIsEdumeet() {
         </section>
 
         {/* FEATURES SECTION */}
-        <section className="w-full bg-[#f8fafc] py-24 md:py-32 px-4 border-t border-black/5">
+        <section className="w-full bg-[#f8fafc] py-14 md:py-20 px-4 border-t border-black/5">
           <div className="max-w-[1200px] mx-auto flex flex-col items-center">
             
             {/* Header */}
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-[#001D2E]">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#001D2E]">
                 Everything a class or meeting needs
               </h2>
             </div>
@@ -163,7 +166,7 @@ export default function WhatIsEdumeet() {
         </section>
 
         {/* WHO IS BEHIND IT SECTION - ARCHITECTURAL TABLE LAYOUT */}
-        <section className="w-full bg-[#f3f4f6] py-24 md:py-32 px-4">
+        <section className="w-full bg-[#f3f4f6] py-14 md:py-20 px-4">
           <div className="max-w-[1200px] mx-auto flex flex-col items-center">
             
             {/* Top Headers */}
@@ -235,21 +238,32 @@ export default function WhatIsEdumeet() {
         </section>
 
         {/* COMPARISON SECTION */}
-        <section className="w-full bg-white py-24 md:py-32 px-4 border-t border-black/5">
+        <section className="w-full bg-white py-14 md:py-20 px-4 border-t border-black/5">
           <div className="max-w-5xl mx-auto flex flex-col">
             
             {/* Section Header */}
-            <div className="text-center mb-16 md:mb-20">
-              <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-[#001D2E] mb-6">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#001D2E] mb-4">
                 How we compare
               </h2>
-              <p className="text-xl text-slate-500 font-medium max-w-2xl mx-auto">
+              <p className="text-lg text-slate-500 font-medium max-w-2xl mx-auto">
                 Built specifically for research and education, structurally different from commercial alternatives.
               </p>
             </div>
 
+            {/* Infographic Blur Placeholder */}
+            <div className="w-full mb-8">
+              <BlurPlaceholder 
+                aspectRatio="wide"
+                category="Infrastructure Comparison"
+                label="Community-Owned Sovereign Mesh vs Commercial Cloud Lock-in"
+                theme="neutral"
+                className="w-full shadow-sm"
+              />
+            </div>
+
             {/* Comparison Grid Layout */}
-            <div className="w-full relative mt-8">
+            <div className="w-full relative mt-4">
               
               {/* Header Row */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-0 mb-4 items-end px-4 md:px-0">

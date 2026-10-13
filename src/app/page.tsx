@@ -84,6 +84,7 @@ export default function Home() {
                   loop 
                   muted 
                   playsInline
+                  preload="metadata"
                   className="absolute inset-0 w-full h-full object-cover block"
                 />
               </div>
@@ -93,14 +94,14 @@ export default function Home() {
         </section>
 
         {/* FEATURES GRID SECTION */}
-        <section className="w-full bg-white py-32 px-4">
+        <section className="w-full bg-white py-14 md:py-20 px-4">
           <div className="max-w-7xl mx-auto flex flex-col">
             <motion.h2 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="text-5xl md:text-6xl font-semibold tracking-tight text-[#001D2E] mb-16 text-center"
+              className="text-3xl md:text-5xl font-semibold tracking-tight text-[#001D2E] mb-10 text-center"
             >
               What does eduMEET mean for you?
             </motion.h2>
@@ -232,7 +233,7 @@ export default function Home() {
         </section>
 
         {/* ABOUT SECTION - PREMIUM REDESIGN */}
-        <section className="w-full bg-[#F5F5F7] py-32 px-4 relative overflow-hidden">
+        <section className="w-full bg-[#F5F5F7] py-14 md:py-20 px-4 relative overflow-hidden">
           {/* Subtle background glow */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#F1921A]/5 rounded-full blur-[120px] pointer-events-none"></div>
           
@@ -246,10 +247,10 @@ export default function Home() {
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
               className="flex flex-col w-full items-center"
             >
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter text-[#001D2E] mb-6 leading-[1.05]">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter text-[#001D2E] mb-4 leading-[1.05]">
                 Easy to access. Easy to use
               </h2>
-              <p className="text-lg text-slate-500 mb-16 leading-relaxed max-w-2xl font-medium">
+              <p className="text-base md:text-lg text-slate-500 mb-10 leading-relaxed max-w-2xl font-medium">
                 eduMEET works exactly like the video tools you already know. The difference is who runs it: the global research and education community.
               </p>
               
@@ -299,11 +300,11 @@ export default function Home() {
         </section>
 
         {/* COMPREHENSIVE FEATURES SECTION */}
-        <section className="w-full bg-[#F7F9FA] py-24 px-4 border-t border-black/5">
+        <section className="w-full bg-[#F7F9FA] py-14 md:py-20 px-4 border-t border-black/5">
           <div className="max-w-7xl mx-auto flex flex-col">
             
-            <div className="mb-16 text-center">
-              <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-[#001D2E]">
+            <div className="mb-10 text-center">
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#001D2E]">
                 Everything a class or meeting needs
               </h2>
             </div>
@@ -404,14 +405,14 @@ export default function Home() {
         </section>
         
         {/* THREE STEPS SECTION */}
-        <section className="w-full bg-white py-24 px-4 border-t border-black/5">
+        <section className="w-full bg-white py-14 md:py-20 px-4 border-t border-black/5">
           <div className="max-w-7xl mx-auto flex flex-col">
             
-            <div className="flex flex-col md:text-center max-w-3xl mx-auto mb-20">
-              <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-[#001D2E] mb-6">
+            <div className="flex flex-col md:text-center max-w-3xl mx-auto mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#001D2E] mb-4">
                 Three steps from your network to your classroom
               </h2>
-              <p className="text-lg text-slate-500 font-normal leading-relaxed">
+              <p className="text-base md:text-lg text-slate-500 font-normal leading-relaxed">
                 eduMEET reaches universities through their National Research and Education Network (NREN), the organisation that already connects your campus to the internet.
               </p>
             </div>
@@ -477,11 +478,11 @@ export default function Home() {
         </section>
 
         {/* CONTROL, COST AND TRUST SECTION */}
-        <section className="w-full bg-[#F7F9FA] py-24 px-4 border-t border-black/5">
+        <section className="w-full bg-[#F7F9FA] py-14 md:py-20 px-4 border-t border-black/5">
           <div className="max-w-7xl mx-auto flex flex-col">
             
-            <div className="flex flex-col md:text-center max-w-3xl mx-auto mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-[#001D2E]">
+            <div className="flex flex-col md:text-center max-w-3xl mx-auto mb-10">
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#001D2E]">
                 Control, cost and trust in one service
               </h2>
             </div>
@@ -752,13 +753,13 @@ export default function Home() {
         </section>
 
         {/* FINAL CTA SECTION */}
-        <section className="w-full bg-slate-50 py-24 px-4 border-t border-slate-200">
+        <section className="w-full bg-slate-50 py-14 md:py-20 px-4 border-t border-slate-200">
           <div className="max-w-[800px] mx-auto flex flex-col items-center text-center">
-            <h2 className="text-3xl font-serif text-[#001D2E] mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#001D2E] mb-4">
               Bring eduMEET to your campus
             </h2>
-            <p className="text-base text-slate-600 mb-10 max-w-xl">
-              Find out if your NREN has joined, or tell us you're interested.
+            <p className="text-base text-slate-600 mb-8 max-w-xl">
+              Find out if your NREN has joined, or tell us you&apos;re interested.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center">
               <Link href="/get-started" className="group inline-flex items-center justify-center px-6 py-3 text-sm font-bold text-white transition-all bg-[#F1921A] hover:bg-[#D97D12] w-full sm:w-auto border border-transparent rounded-none shadow-none">

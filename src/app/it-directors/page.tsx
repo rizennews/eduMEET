@@ -19,7 +19,7 @@ export default function ITDirectorsPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
             >
-              <h1 className="text-5xl md:text-6xl xl:text-7x2 font-bold tracking-tighter text-white mb-8 text-balance">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tighter text-white mb-8 text-balance">
                 Seamless integration and control
               </h1>
             </motion.div>
@@ -29,7 +29,7 @@ export default function ITDirectorsPage() {
         </section>
 
         {/* WHAT IT TAKES & IT CHECKLIST SECTION */}
-        <section className="w-full bg-white py-16 md:py-24 px-4 border-t border-slate-200">
+        <section className="w-full bg-white py-14 md:py-20 px-4 border-t border-slate-200">
           <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-0 lg:divide-x divide-slate-200 lg:border border-slate-200">
             
             {/* Left Column: What it takes */}
@@ -102,7 +102,7 @@ export default function ITDirectorsPage() {
         </section>
 
         {/* TECHNICAL FEATURES SECTION */}
-        <section className="w-full bg-[#001D2E] py-24 md:py-32 px-4 border-t border-slate-800">
+        <section className="w-full bg-[#001D2E] py-14 md:py-20 px-4 border-t border-slate-800">
           <div className="max-w-[1200px] mx-auto">
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 divide-y md:divide-y-0 md:divide-x divide-white/10 lg:border border-white/10">
@@ -161,27 +161,27 @@ export default function ITDirectorsPage() {
         </section>
 
         {/* BOTTOM SECTIONS: CAPACITY & DEEPER DIVE */}
-        <section className="w-full bg-slate-50 py-16 md:py-24 px-4 border-t border-slate-200">
+        <section className="w-full bg-slate-50 py-14 md:py-20 px-4 border-t border-slate-200">
           <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 lg:border lg:border-slate-200 lg:divide-x divide-slate-200 bg-white">
             
             {/* How capacity is counted (with Table) */}
-            <div className="p-8 md:p-12 xl:p-16 flex flex-col justify-center border-b lg:border-b-0 border-slate-200">
+            <div className="p-5 sm:p-8 md:p-12 xl:p-16 flex flex-col justify-center border-b lg:border-b-0 border-slate-200">
               <div className="text-sm font-bold tracking-wider uppercase text-[#003B5C] mb-4 flex items-center gap-2">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
                 Metrics
               </div>
-              <h2 className="text-3xl font-bold text-[#001D2E] mb-6">How capacity is counted</h2>
-              <p className="text-slate-600 font-medium leading-relaxed mb-8">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#001D2E] mb-4 sm:mb-6">How capacity is counted</h2>
+              <p className="text-slate-600 font-medium leading-relaxed mb-6 sm:mb-8 text-sm sm:text-base">
                 Rooms are sized automatically by how many people are in them. Capacity is measured in concurrent slots: sessions of each size running at the same moment.
               </p>
               
-              <div className="w-full overflow-x-auto border border-slate-200">
-                <table className="w-full text-left border-collapse">
+              <div className="w-full overflow-x-auto border border-slate-200 -mx-1 sm:mx-0">
+                <table className="w-full min-w-[360px] text-left border-collapse">
                   <thead>
                     <tr className="bg-slate-50 border-b border-slate-200">
-                      <th className="p-4 text-sm font-bold text-[#001D2E] uppercase tracking-wider">Room type</th>
-                      <th className="p-4 text-sm font-bold text-[#001D2E] uppercase tracking-wider">Participants</th>
-                      <th className="p-4 text-sm font-bold text-[#001D2E] uppercase tracking-wider">Typical use</th>
+                      <th className="p-3 sm:p-4 text-xs sm:text-sm font-bold text-[#001D2E] uppercase tracking-wider">Room type</th>
+                      <th className="p-3 sm:p-4 text-xs sm:text-sm font-bold text-[#001D2E] uppercase tracking-wider">Participants</th>
+                      <th className="p-3 sm:p-4 text-xs sm:text-sm font-bold text-[#001D2E] uppercase tracking-wider">Typical use</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100">

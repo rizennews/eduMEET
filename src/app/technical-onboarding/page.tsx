@@ -1,6 +1,7 @@
 "use client";
 
 import { PageTransition } from "@/components/page-transition";
+import { BlurPlaceholder } from "@/components/blur-placeholder";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
@@ -21,7 +22,7 @@ export default function TechnicalOnboardingPage() {
               transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
               className="w-full"
             >
-              <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold tracking-tighter text-white mb-8">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tighter text-white mb-8 text-balance">
                 Federation onboarding
               </h1>
             </motion.div>
@@ -63,7 +64,7 @@ export default function TechnicalOnboardingPage() {
                 <div>
                   <h4 className="text-sm font-bold tracking-wider uppercase text-[#001D2E] mb-2">Note for Subscribers</h4>
                   <p className="text-base text-slate-600 leading-relaxed">
-                    Service subscribers don't need local media-node infrastructure. The server, firewall and DNS requirements below apply to infrastructure contributors. Contact <a href="mailto:PMO@wacren.net" className="text-[#2A75C1] hover:underline font-bold">PMO@wacren.net</a> about subscriber onboarding.
+                    Service subscribers don&apos;t need local media-node infrastructure. The server, firewall and DNS requirements below apply to infrastructure contributors. Contact <a href="mailto:PMO@wacren.net" className="text-[#2A75C1] hover:underline font-bold">PMO@wacren.net</a> about subscriber onboarding.
                   </p>
                 </div>
               </div>
@@ -109,11 +110,22 @@ export default function TechnicalOnboardingPage() {
         <section className="w-full bg-white py-16 md:py-20 px-4 border-t border-slate-200">
           <div className="max-w-[1200px] mx-auto flex flex-col items-center">
             
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-5xl font-bold text-[#001D2E] mb-6">Deployment Checklist</h2>
-              <p className="text-lg text-slate-500 font-medium max-w-2xl mx-auto">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#001D2E] mb-4">Deployment Checklist</h2>
+              <p className="text-lg text-slate-500 font-medium max-w-2xl mx-auto mb-6">
                 Everything you need to set up your infrastructure for the African eduMEET Federation.
               </p>
+              
+              {/* Blur Placeholder Topology Banner */}
+              <div className="w-full max-w-4xl mx-auto mb-4">
+                <BlurPlaceholder 
+                  aspectRatio="wide"
+                  category="Node Deployment"
+                  label="Media Server Clustering & Firewall Ingress Topology"
+                  theme="dark"
+                  className="w-full shadow-md"
+                />
+              </div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full mb-12">
@@ -135,7 +147,7 @@ export default function TechnicalOnboardingPage() {
                   </ul>
                 </div>
                 <div className="mt-auto">
-                  <p className="text-sm font-bold text-[#001D2E] mb-2">Add this to root's trusted SSH keys:</p>
+                  <p className="text-sm font-bold text-[#001D2E] mb-2">Add this to root&apos;s trusted SSH keys:</p>
                   <code className="block bg-[#001D2E] text-[#4ADE80] p-3 text-xs font-mono break-all">
                     ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK4OD1LfqRHzQe0rMsF7E6VlcF4nQV4HhBNeW4WT0Q0LCopy
                   </code>
@@ -154,7 +166,7 @@ export default function TechnicalOnboardingPage() {
                 <ul className="space-y-3 mt-auto">
                   <li className="flex items-start gap-3">
                     <svg className="w-6 h-6 text-[#8E1B73] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
-                    <span className="text-slate-700 font-medium"><strong className="text-[#001D2E]">TCP 443, 80:</strong> TURN over TLS, Let's Encrypt</span>
+                    <span className="text-slate-700 font-medium"><strong className="text-[#001D2E]">TCP 443, 80:</strong> TURN over TLS, Let&apos;s Encrypt</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <svg className="w-6 h-6 text-[#8E1B73] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
@@ -182,7 +194,7 @@ export default function TechnicalOnboardingPage() {
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-4">DNS Setup</h3>
                 <p className="text-white/80 font-medium leading-relaxed mb-6 max-w-3xl">
-                  Add a CNAME record for the domain your users will use. The target points to the federation's management node.
+                  Add a CNAME record for the domain your users will use. The target points to the federation&apos;s management node.
                 </p>
                 <div>
                   <code className="block bg-[#003B5C] text-[#4ADE80] p-4 text-sm font-mono mb-4 border border-white/10 w-fit">
@@ -195,28 +207,28 @@ export default function TechnicalOnboardingPage() {
               </div>
 
               {/* Requirement 4: Identity & SSO */}
-              <div className="flex flex-col md:col-span-2 bg-[#003B5C] border border-[#003B5C] p-8 md:p-12 lg:p-16 relative overflow-hidden">
-                <div className="w-12 h-12 bg-white/10 flex items-center justify-center mb-8 border border-white/20 relative z-10">
+              <div className="flex flex-col md:col-span-2 bg-[#003B5C] border border-[#003B5C] p-5 sm:p-8 md:p-12 lg:p-16 relative overflow-hidden">
+                <div className="w-12 h-12 bg-white/10 flex items-center justify-center mb-6 sm:mb-8 border border-white/20 relative z-10">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" /></svg>
                 </div>
                 <div className="relative z-10">
-                  <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">SSO / OpenID Connect</h3>
-                  <p className="text-lg text-white/80 font-medium leading-relaxed mb-6 max-w-3xl">
+                  <h3 className="text-2xl md:text-3xl font-bold text-white mb-3 sm:mb-4">SSO / OpenID Connect</h3>
+                  <p className="text-base sm:text-lg text-white/80 font-medium leading-relaxed mb-6 max-w-3xl">
                     <span className="text-[#F1921A] font-bold">Optional but strongly recommended:</span> it enables institutional identity for room management and persistent rooms. Register a new application in your SSO service:
                   </p>
                   
-                  <div className="overflow-x-auto mb-6 border border-white/10 bg-[#001D2E]/20">
-                    <table className="w-full text-left text-white/90 text-sm md:text-base">
+                  <div className="overflow-x-auto mb-6 border border-white/10 bg-[#001D2E]/20 -mx-1 sm:mx-0">
+                    <table className="w-full min-w-[420px] text-left text-white/90 text-xs sm:text-sm md:text-base">
                       <thead className="bg-white/5 border-b border-white/10 text-white">
                         <tr>
-                          <th className="px-6 py-4 font-bold">Parameter</th>
-                          <th className="px-6 py-4 font-bold">Value</th>
+                          <th className="px-4 sm:px-6 py-3 sm:py-4 font-bold">Parameter</th>
+                          <th className="px-4 sm:px-6 py-3 sm:py-4 font-bold">Value</th>
                         </tr>
                       </thead>
                       <tbody className="divide-y divide-white/5 font-medium">
                         <tr>
-                          <td className="px-6 py-4 font-mono text-sm text-[#4ADE80]">client_id</td>
-                          <td className="px-6 py-4">edumeet, or another chosen name</td>
+                          <td className="px-4 sm:px-6 py-3 sm:py-4 font-mono text-xs sm:text-sm text-[#4ADE80]">client_id</td>
+                          <td className="px-4 sm:px-6 py-3 sm:py-4">edumeet, or another chosen name</td>
                         </tr>
                         <tr>
                           <td className="px-6 py-4 font-mono text-sm text-[#4ADE80]">client_secret</td>
@@ -248,12 +260,12 @@ export default function TechnicalOnboardingPage() {
         </section>
 
         {/* FINAL CTA SECTION */}
-        <section className="w-full bg-slate-50 py-24 px-4 border-t border-slate-200">
+        <section className="w-full bg-slate-50 py-14 md:py-20 px-4 border-t border-slate-200">
           <div className="max-w-[800px] mx-auto flex flex-col items-center text-center">
-            <h2 className="text-3xl font-serif text-[#001D2E] mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#001D2E] mb-4">
               Contact WACREN
             </h2>
-            <p className="text-base text-slate-600 mb-10 max-w-xl">
+            <p className="text-base text-slate-600 mb-8 max-w-xl">
               For joining the federation as an infrastructure contributor, email <a href="mailto:PMO@wacren.net" className="text-[#F1921A] hover:underline transition-colors">PMO@wacren.net</a> or use the enquiry form.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center">

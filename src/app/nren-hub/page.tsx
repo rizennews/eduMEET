@@ -20,7 +20,7 @@ export default function NrenHubPage() {
               transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
               className="w-full"
             >
-              <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold tracking-tighter text-white mb-8">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tighter text-white mb-8 text-balance">
                 The hub for NRENs
               </h1>
             </motion.div>
@@ -31,19 +31,19 @@ export default function NrenHubPage() {
         </section>
 
         {/* WAYS TO JOIN SECTION */}
-        <section className="w-full bg-slate-50 py-20 md:py-32 px-4 border-t border-slate-200">
+        <section className="w-full bg-slate-50 py-14 md:py-20 px-4 border-t border-slate-200">
           <div className="max-w-[1200px] mx-auto flex flex-col">
             
-            <div className="mb-16 text-center flex flex-col items-center">
-              <div className="text-sm font-bold tracking-wider uppercase text-[#F1921A] mb-4 flex items-center justify-center gap-2">
+            <div className="mb-10 text-center flex flex-col items-center">
+              <div className="text-sm font-bold tracking-wider uppercase text-[#F1921A] mb-3 flex items-center justify-center gap-2">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
                 Participation
               </div>
-              <h2 className="text-3xl md:text-5xl font-bold text-[#001D2E] mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#001D2E] mb-4">
                 Ways to join the federation
               </h2>
-              <p className="text-lg text-slate-600 font-medium max-w-2xl mx-auto leading-relaxed">
-                Whether you want to contribute capacity or simply subscribe to the service, there is a model that fits your NREN's resources.
+              <p className="text-base md:text-lg text-slate-600 font-medium max-w-2xl mx-auto leading-relaxed">
+                Whether you want to contribute capacity or simply subscribe to the service, there is a model that fits your NREN&apos;s resources.
               </p>
             </div>
 
@@ -127,15 +127,15 @@ export default function NrenHubPage() {
         </section>
 
         {/* TECHNICAL ONBOARDING GRID */}
-        <section className="w-full bg-white py-20 md:py-32 px-4 border-t border-slate-200">
+        <section className="w-full bg-white py-14 md:py-20 px-4 border-t border-slate-200">
           <div className="max-w-[1200px] mx-auto flex flex-col">
             
-            <div className="mb-16">
-              <div className="text-sm font-bold tracking-wider uppercase text-[#8E1B73] mb-4 flex items-center gap-2">
+            <div className="mb-10">
+              <div className="text-sm font-bold tracking-wider uppercase text-[#8E1B73] mb-3 flex items-center gap-2">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
                 Implementation
               </div>
-              <h2 className="text-3xl md:text-5xl font-bold text-[#001D2E]">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#001D2E]">
                 Technical Onboarding
               </h2>
             </div>

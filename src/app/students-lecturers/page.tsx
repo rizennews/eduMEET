@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { PageTransition } from "@/components/page-transition";
+import { BlurPlaceholder } from "@/components/blur-placeholder";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function StudentsLecturersPage() {
@@ -20,7 +21,7 @@ export default function StudentsLecturersPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
             >
-              <h1 className="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tighter text-white mb-8 text-balance">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tighter text-white mb-8 text-balance">
                 Teach, learn and meet from any browser
               </h1>
             </motion.div>
@@ -29,12 +30,12 @@ export default function StudentsLecturersPage() {
         </section>
 
         {/* USE CASES SECTION */}
-        <section className="w-full bg-[#f8fafc] py-24 md:py-32 px-4 border-t border-black/5">
+        <section className="w-full bg-[#f8fafc] py-16 md:py-20 px-4 border-t border-black/5">
           <div className="max-w-[1200px] mx-auto flex flex-col items-center">
             
             {/* Header */}
-            <div className="text-center mb-16 md:mb-20">
-              <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-[#001D2E]">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#001D2E]">
                 What you can use it for
               </h2>
             </div>
@@ -44,7 +45,14 @@ export default function StudentsLecturersPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 
                 {/* Item 1 */}
-                <div className="flex flex-col p-8 md:p-10 border-r border-b border-slate-200 h-full">
+                <div className="flex flex-col p-6 md:p-8 border-r border-b border-slate-200 h-full">
+                  <BlurPlaceholder 
+                    aspectRatio="video"
+                    category="Large Classroom"
+                    label="Live Lecture & Slide Stream"
+                    theme="blue"
+                    className="mb-4"
+                  />
                   <div className="text-xs font-bold tracking-wider uppercase text-[#2A75C1] mb-3">Up to 300 people</div>
                   <h3 className="text-xl md:text-2xl font-bold text-[#001D2E] mb-4">Lectures</h3>
                   <p className="text-slate-500 leading-relaxed font-medium">
@@ -54,6 +62,13 @@ export default function StudentsLecturersPage() {
 
                 {/* Item 2 */}
                 <div className="flex flex-col p-8 md:p-10 border-r border-b border-slate-200 h-full">
+                  <BlurPlaceholder 
+                    aspectRatio="video"
+                    category="Collaborative"
+                    label="Split Breakout Rooms"
+                    theme="orange"
+                    className="mb-6"
+                  />
                   <div className="text-xs font-bold tracking-wider uppercase text-[#F1921A] mb-3">Up to 100 people</div>
                   <h3 className="text-xl md:text-2xl font-bold text-[#001D2E] mb-4">Tutorials and seminars</h3>
                   <p className="text-slate-500 leading-relaxed font-medium">
@@ -63,6 +78,13 @@ export default function StudentsLecturersPage() {
 
                 {/* Item 3 */}
                 <div className="flex flex-col p-8 md:p-10 border-r border-b border-slate-200 h-full">
+                  <BlurPlaceholder 
+                    aspectRatio="video"
+                    category="Direct 1-on-1"
+                    label="Supervision & Permanent Room"
+                    theme="purple"
+                    className="mb-6"
+                  />
                   <div className="text-xs font-bold tracking-wider uppercase text-[#8E1B73] mb-3">One to one or small groups</div>
                   <h3 className="text-xl md:text-2xl font-bold text-[#001D2E] mb-4">Office hours and supervision</h3>
                   <p className="text-slate-500 leading-relaxed font-medium">
@@ -72,6 +94,13 @@ export default function StudentsLecturersPage() {
 
                 {/* Item 4 */}
                 <div className="flex flex-col p-8 md:p-10 border-r border-b border-slate-200 h-full">
+                  <BlurPlaceholder 
+                    aspectRatio="video"
+                    category="Peer Study"
+                    label="Shared Canvas & Group Whiteboard"
+                    theme="neutral"
+                    className="mb-6"
+                  />
                   <div className="text-xs font-bold tracking-wider uppercase text-[#003B5C] mb-3">Any size</div>
                   <h3 className="text-xl md:text-2xl font-bold text-[#001D2E] mb-4">Group projects</h3>
                   <p className="text-slate-500 leading-relaxed font-medium">
@@ -81,6 +110,13 @@ export default function StudentsLecturersPage() {
 
                 {/* Item 5 */}
                 <div className="flex flex-col p-8 md:p-10 border-r border-b border-slate-200 h-full lg:col-span-2 xl:col-span-1">
+                  <BlurPlaceholder 
+                    aspectRatio="video"
+                    category="External Committee"
+                    label="External Examination Chamber"
+                    theme="blue"
+                    className="mb-6"
+                  />
                   <div className="text-xs font-bold tracking-wider uppercase text-[#2A75C1] mb-3">Examiners anywhere</div>
                   <h3 className="text-xl md:text-2xl font-bold text-[#001D2E] mb-4">Thesis defences and vivas</h3>
                   <p className="text-slate-500 leading-relaxed font-medium">
@@ -176,7 +212,7 @@ export default function StudentsLecturersPage() {
         </section>
 
         {/* FAQ SECTION */}
-        <section className="w-full bg-white py-24 md:py-32 px-4 border-t border-slate-200">
+        <section className="w-full bg-white py-14 md:py-20 px-4 border-t border-slate-200">
           <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8">
             
             {/* Left: Title & Intro */}
@@ -221,7 +257,7 @@ export default function StudentsLecturersPage() {
         </section>
 
         {/* BOTTOM SECTIONS: TIPS & CTA */}
-        <section className="w-full bg-slate-50 py-24 md:py-32 px-4 border-t border-slate-200">
+        <section className="w-full bg-slate-50 py-14 md:py-20 px-4 border-t border-slate-200">
           <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-0 lg:border lg:border-slate-200 lg:divide-x divide-slate-200 bg-white">
             
             {/* Tips for low bandwidth */}

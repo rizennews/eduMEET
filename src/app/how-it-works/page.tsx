@@ -1,6 +1,7 @@
 "use client";
 
 import { PageTransition } from "@/components/page-transition";
+import { BlurPlaceholder } from "@/components/blur-placeholder";
 import { motion } from "framer-motion";
 
 export default function HowItWorksPage() {
@@ -20,7 +21,7 @@ export default function HowItWorksPage() {
               transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
               className="w-full"
             >
-              <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold tracking-tighter text-white mb-8">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tighter text-white mb-8 text-balance">
                 How eduMEET works
               </h1>
             </motion.div>
@@ -30,15 +31,15 @@ export default function HowItWorksPage() {
         </section>
 
         {/* WORKFLOW SECTION */}
-        <section className="w-full bg-slate-50 py-20 md:py-32 px-4 border-t border-slate-200">
+        <section className="w-full bg-slate-50 py-14 md:py-20 px-4 border-t border-slate-200">
           <div className="max-w-[1200px] mx-auto flex flex-col items-center">
             
-            <div className="text-center mb-16">
-              <div className="text-sm font-bold tracking-wider uppercase text-[#F1921A] mb-4 flex items-center justify-center gap-2">
+            <div className="text-center mb-10">
+              <div className="text-sm font-bold tracking-wider uppercase text-[#F1921A] mb-3 flex items-center justify-center gap-2">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>
                 What users see
               </div>
-              <h2 className="text-3xl md:text-5xl font-bold text-[#001D2E] mb-6">From link to lecture in seconds</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-[#001D2E] mb-4">From link to lecture in seconds</h2>
             </div>
 
             <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 bg-white border border-slate-200 divide-y md:divide-y-0 lg:divide-x divide-slate-200">
@@ -46,7 +47,7 @@ export default function HowItWorksPage() {
               {/* Step 1 */}
               <div className="flex flex-col p-8 lg:p-10">
                 <div className="text-5xl font-bold text-[#003B5C]/20 mb-6 font-mono">01</div>
-                <h3 className="text-xl font-bold text-[#001D2E] mb-4">Open your university's link</h3>
+                <h3 className="text-xl font-bold text-[#001D2E] mb-4">Open your university&apos;s link</h3>
                 <p className="text-slate-600 font-medium leading-relaxed">
                   For example <code className="bg-slate-100 text-[#8E1B73] px-2 py-1 rounded font-mono text-sm border border-slate-200">meet.youruniversity.edu.gh</code>.
                 </p>
@@ -85,16 +86,16 @@ export default function HowItWorksPage() {
         </section>
 
         {/* BEHIND THE SCENES SECTION */}
-        <section className="w-full bg-white py-20 md:py-32 px-4 border-t border-slate-200">
+        <section className="w-full bg-white py-14 md:py-20 px-4 border-t border-slate-200">
           <div className="max-w-[1200px] mx-auto flex flex-col items-center">
             
-            <div className="text-center mb-16">
-              <div className="text-sm font-bold tracking-wider uppercase text-[#003B5C] mb-4 flex items-center justify-center gap-2">
+            <div className="text-center mb-10">
+              <div className="text-sm font-bold tracking-wider uppercase text-[#003B5C] mb-3 flex items-center justify-center gap-2">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
                 Behind the scenes
               </div>
-              <h2 className="text-3xl md:text-5xl font-bold text-[#001D2E] mb-6">Centrally managed, locally hosted</h2>
-              <p className="text-lg text-slate-500 font-medium max-w-2xl mx-auto text-balance">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#001D2E] mb-4">Centrally managed, locally hosted</h2>
+              <p className="text-base md:text-lg text-slate-500 font-medium max-w-2xl mx-auto text-balance">
                 A federation model that combines local service identity with shared orchestration and distributed media resources, seeded across the WACREN backbone.
               </p>
             </div>
@@ -102,10 +103,14 @@ export default function HowItWorksPage() {
             <div className="w-full grid grid-cols-1 md:grid-cols-3 bg-white border border-slate-200 divide-y md:divide-y-0 md:divide-x divide-slate-200">
               
               {/* Pillar 1: Local Identity */}
-              <div className="flex flex-col p-8 lg:p-12">
-                <div className="w-12 h-12 rounded-full bg-slate-100 flex items-center justify-center mb-6">
-                  <svg className="w-6 h-6 text-[#8E1B73]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2" /></svg>
-                </div>
+              <div className="flex flex-col p-6 lg:p-8">
+                <BlurPlaceholder 
+                  aspectRatio="video"
+                  category="SSO & Tenant"
+                  label="Local Institutional Identity"
+                  theme="purple"
+                  className="mb-4"
+                />
                 <div className="text-sm font-bold tracking-wider uppercase text-[#8E1B73] mb-2">Local identity</div>
                 <h3 className="text-xl font-bold text-[#001D2E] mb-4">Domain, tenant and SSO</h3>
                 <p className="text-slate-600 font-medium leading-relaxed">
@@ -114,10 +119,14 @@ export default function HowItWorksPage() {
               </div>
 
               {/* Pillar 2: Shared Control */}
-              <div className="flex flex-col p-8 lg:p-12">
-                <div className="w-12 h-12 rounded-full bg-slate-100 flex items-center justify-center mb-6">
-                  <svg className="w-6 h-6 text-[#F1921A]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" /></svg>
-                </div>
+              <div className="flex flex-col p-6 lg:p-8">
+                <BlurPlaceholder 
+                  aspectRatio="video"
+                  category="Orchestration"
+                  label="Central Coordination Layer"
+                  theme="orange"
+                  className="mb-4"
+                />
                 <div className="text-sm font-bold tracking-wider uppercase text-[#F1921A] mb-2">Shared control</div>
                 <h3 className="text-xl font-bold text-[#001D2E] mb-4">Central orchestration</h3>
                 <p className="text-slate-600 font-medium leading-relaxed">
@@ -126,10 +135,14 @@ export default function HowItWorksPage() {
               </div>
 
               {/* Pillar 3: Media Layer */}
-              <div className="flex flex-col p-8 lg:p-12">
-                <div className="w-12 h-12 rounded-full bg-slate-100 flex items-center justify-center mb-6">
-                  <svg className="w-6 h-6 text-[#2A75C1]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" /></svg>
-                </div>
+              <div className="flex flex-col p-6 lg:p-8">
+                <BlurPlaceholder 
+                  aspectRatio="video"
+                  category="Media Routing"
+                  label="Backbone Media Nodes"
+                  theme="blue"
+                  className="mb-4"
+                />
                 <div className="text-sm font-bold tracking-wider uppercase text-[#2A75C1] mb-2">Media layer</div>
                 <h3 className="text-xl font-bold text-[#001D2E] mb-4">Backbone media nodes</h3>
                 <p className="text-slate-600 font-medium leading-relaxed">
@@ -143,12 +156,12 @@ export default function HowItWorksPage() {
         </section>
 
         {/* DEEP DIVE SECTION */}
-        <section className="w-full bg-slate-50 py-20 md:py-32 px-4 border-t border-slate-200">
-          <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8 items-start">
+        <section className="w-full bg-slate-50 py-14 md:py-20 px-4 border-t border-slate-200">
+          <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-8 items-start">
             
             {/* Left Column: Header */}
             <div className="md:col-span-5 lg:col-span-4 flex flex-col md:pr-8">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#001D2E] leading-tight text-balance">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#001D2E] leading-tight text-balance">
                 Local identity, shared infrastructure
               </h2>
             </div>
@@ -167,11 +180,11 @@ export default function HowItWorksPage() {
         </section>
 
         {/* FEATURES GRID SECTION */}
-        <section className="w-full bg-white py-20 md:py-32 px-4 border-t border-slate-200">
+        <section className="w-full bg-white py-14 md:py-20 px-4 border-t border-slate-200">
           <div className="max-w-[1200px] mx-auto flex flex-col">
             
-            <div className="mb-16">
-              <h2 className="text-3xl md:text-5xl font-bold text-[#001D2E]">
+            <div className="mb-10">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#001D2E]">
                 What the federation provides
               </h2>
             </div>
@@ -250,18 +263,18 @@ export default function HowItWorksPage() {
         </section>
 
         {/* ROADMAP SECTION */}
-        <section className="w-full bg-slate-50 py-20 md:py-32 border-t border-slate-200">
+        <section className="w-full bg-slate-50 py-14 md:py-20 border-t border-slate-200">
           
-          <div className="w-full text-center flex flex-col items-center mb-16 px-4">
-            <div className="text-sm font-bold tracking-wider uppercase text-[#8E1B73] mb-4 flex items-center gap-2 justify-center">
+          <div className="w-full text-center flex flex-col items-center mb-10 px-4">
+            <div className="text-sm font-bold tracking-wider uppercase text-[#8E1B73] mb-3 flex items-center gap-2 justify-center">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
               Roadmap
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold text-[#001D2E] mb-8 text-balance">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#001D2E] mb-4 text-balance">
               Towards autonomous African infrastructure
             </h2>
             <p className="text-sm md:text-base text-slate-600 font-medium w-full max-w-[1400px] leading-relaxed text-center">
-              The federation launches on shared management infrastructure operated by the eduMEET team at PCSS, the same infrastructure behind the European federation. WACREN holds full administrative control over African tenants, domains and user management from day one. The roadmap moves to an African-hosted management node, making the orchestration layer, management node and all tenant data African-hosted under WACREN's control.
+              The federation launches on shared management infrastructure operated by the eduMEET team at PCSS, the same infrastructure behind the European federation. WACREN holds full administrative control over African tenants, domains and user management from day one. The roadmap moves to an African-hosted management node, making the orchestration layer, management node and all tenant data African-hosted under WACREN&apos;s control.
             </p>
           </div>
 
@@ -320,14 +333,14 @@ export default function HowItWorksPage() {
         </section>
 
         {/* FINAL CTA & AUDIENCE SECTION */}
-        <section className="w-full bg-[#003B5C] py-24 md:py-32 px-4">
+        <section className="w-full bg-[#003B5C] py-14 md:py-20 px-4">
           <div className="max-w-[1000px] mx-auto flex flex-col items-center">
             
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-16 text-center text-balance">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-10 text-center text-balance">
               Designed for the African R&E community
             </h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6 w-full max-w-3xl mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6 w-full max-w-3xl mb-10">
               {[
                 "National Research and Education Networks",
                 "Universities and research institutions",
