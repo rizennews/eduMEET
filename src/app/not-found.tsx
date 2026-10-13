@@ -2,14 +2,8 @@ import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <main className="w-full min-h-[85vh] flex flex-col justify-center bg-white px-4 pt-32 pb-20 border-t border-slate-200">
+    <main className="w-full min-h-screen flex flex-col justify-center bg-white px-4 py-16">
       <div className="max-w-[1200px] mx-auto w-full flex flex-col">
-        
-        {/* Top Tag */}
-        <div className="text-sm font-bold tracking-wider uppercase text-[#8E1B73] mb-6 flex items-center gap-3">
-          <span className="w-8 h-[2px] bg-[#8E1B73]" />
-          404 &middot; Page not found
-        </div>
 
         {/* Large Editorial Headline */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-12 border-b border-slate-200 pb-12">

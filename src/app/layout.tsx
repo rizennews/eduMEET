@@ -77,8 +77,7 @@ export const metadata: Metadata = {
 };
 
 import { Providers } from "@/components/providers";
-import { Navigation } from "@/components/navigation";
-import { Footer } from "@/components/footer";
+import { LayoutShell } from "@/components/layout-shell";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const jsonLd = {
@@ -131,9 +130,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         />
         <Providers>
-          <Navigation />
-          {children}
-          <Footer />
+          <LayoutShell>
+            {children}
+          </LayoutShell>
         </Providers>
       </body>
     </html>
