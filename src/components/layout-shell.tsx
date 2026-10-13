@@ -4,15 +4,33 @@ import { usePathname } from "next/navigation";
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
 
+const VALID_ROUTES = new Set([
+  "/",
+  "/faq",
+  "/federation-model",
+  "/get-started",
+  "/how-it-works",
+  "/it-directors",
+  "/leadership",
+  "/nren-hub",
+  "/nrens",
+  "/participation",
+  "/researchers",
+  "/students-lecturers",
+  "/technical-onboarding",
+  "/what-is-edumeet",
+]);
+
 export function LayoutShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
-  const isNotFound = pathname === "/404" || pathname === "/_not-found";
+  // Any route not in our defined valid routes is a 404 page
+  const is404 = !VALID_ROUTES.has(pathname);
 
   return (
     <>
-      {!isNotFound && <Navigation />}
+      {!is404 && <Navigation />}
       {children}
-      {!isNotFound && <Footer />}
+      {!is404 && <Footer />}
     </>
   );
 }
